@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+  background: red;
+  height: 200px;
+  width: 200px;
+  border: 7px dotted silver;
+  border-bottom: 0;
+  border-top-style: solid;
+  border-style: double;
+
+  border-radius: 15px 50%;
+  opacity: 0.9;
+  margin: 20px 50px;
+  padding: 20px 50px;
+
+  display: block;
+}
+
+.limonchik {
+	width: 200px; /* Указываем ширину и высоту объекта */
+	height: 200px;
+	background: #F5F240; /* Указываем задний фон - желтый */
+	border: 2px solid #F0D900; /* Обводка 2 пикселя */
+	border-radius: 10px 150px 30px 150px; /* Скругление углов */
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.borders {
+ width: 0; height: 0;
+ border: 100px solid;
+ border-color: #FF5B45 #1D532A #6DCDF7 #FFE02E;
+}
