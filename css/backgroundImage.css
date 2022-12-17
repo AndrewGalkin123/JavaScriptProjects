@@ -1,0 +1,17 @@
+#first{
+  /* background-color: #3d6c87;
+  color: #802085;
+  background-image: url(https://cdn.pixabay.com/photo/2017/09/01/00/16/png-2702697__340.png);
+  background-repeat: no-repeat;
+  background-position: left; */
+
+  color: #3d6c87;
+  background: #3d6c87 url(https://cdn.pixabay.com/photo/2017/09/01/00/16/png-2702697__340.png) no-repeat center;
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#second{
+  height: 2000px;
+}
