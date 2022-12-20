@@ -32,6 +32,35 @@ body{
   float: left;
 }
 
+#nav {
+  list-style: none;
+  display: block;
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#nav li {
+  display: inline;
+  background: #fafafa;
+  border: 1px solid silver;
+  padding:  0 20px;
+  cursor: pointer;
+}
+
+#nav li:hover {
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  border-color : #333;
+}
+
+#nav li:not(:last-of-type){
+  margin-right: 20px;
+}
+
 #main {
   width: 50%;
   margin-left: 10%;
@@ -39,6 +68,8 @@ body{
   border: 1px solid silver;
   padding: 20px 2.5%;
   float: left;
+  position: relative;
+  z-index: 1;
 }
 
 #aside {
@@ -50,6 +81,8 @@ body{
   margin-left: 5%;
   position: relative;
   bottom: -10px;
+  z-index: 0;
+  left: -200px;
 }
 
 #footer {
