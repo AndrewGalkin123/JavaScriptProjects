@@ -7,15 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-  <noscript>Включите JavaScript!!!</noscript>
+    <button name="mainButton" onclick="onClickButton(this)">Нажми на меня</button>
 
-    <script src="js/functions.js">
-    /*
-    подключается сторонний файл или код
-    */
+    <input oninput="onInput(this)">
 
-
-    </script>
-
+    <p onclick="onClickButton()">Нажми на меня</p>
+    <noscript>Включите JavaScript!!!</noscript>
+    <script src="js/events.js"></script>
 </body>
 </html>
