@@ -1,38 +1,39 @@
-function check(el){
-    if(el==0){
-      conclusion.value += "0";
-      return;
-    }
-    switch (document.getElementsByClassName('button')[el-1].innerHTML) {
-      case "1":
-        conclusion.value += "1";
-        break;
-      case "2":
-        conclusion.value += "2";
-        break;
-      case "3":
-        conclusion.value += "3";
-        break;
-      case "4":
-        conclusion.value += "4";
-        break;
-      case "5":
-        conclusion.value += "5";
-        break;
-      case "6":
-        conclusion.value += "6";
-        break;
-      case "7":
-        conclusion.value += "7";
-        break;
-      case "8":
-        conclusion.value += "8";
-        break;
-      case "9":
-        conclusion.value += "9";
-        break;
-    }
-}
+//есть вариант проще
+// function check(el){
+//     if(el==0){
+//       conclusion.value += "0";
+//       return;
+//     }
+//     switch (document.getElementsByClassName('button')[el-1].innerHTML) {
+//       case "1":
+//         conclusion.value += "1";
+//         break;
+//       case "2":
+//         conclusion.value += "2";
+//         break;
+//       case "3":
+//         conclusion.value += "3";
+//         break;
+//       case "4":
+//         conclusion.value += "4";
+//         break;
+//       case "5":
+//         conclusion.value += "5";
+//         break;
+//       case "6":
+//         conclusion.value += "6";
+//         break;
+//       case "7":
+//         conclusion.value += "7";
+//         break;
+//       case "8":
+//         conclusion.value += "8";
+//         break;
+//       case "9":
+//         conclusion.value += "9";
+//         break;
+//     }
+// }
 
 //что бы подсчитать разбей на элементы по типу +- и тд
 //можно по отдельным функциям
@@ -127,3 +128,14 @@ function check(el){
 //   var minus1 = plus1.split('-');
 //   console.log(plus1);
 // }
+//рабочий вариант
+let display = document.getElementById("conclusion");
+function clear() {
+  conclusion.value = "";
+}
+function calc() {
+  display.value = eval(display.value);
+}
+function press(x) {
+  display.value += x;
+}
