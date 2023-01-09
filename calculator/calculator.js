@@ -134,7 +134,7 @@ function clear() {
   conclusion.value = "";
 }
 function calc() {
-  conclusion.value = eval(display.value);
+  conclusion.value = eval(conclusion.value);
 }
 function press(x) {
   conclusion.value += x;
