@@ -129,13 +129,14 @@
 //   console.log(plus1);
 // }
 //рабочий вариант
+
 let conclusion = document.getElementById("conclusion");
-function clear() {
-  conclusion.value = "";
-}
 function calc() {
   conclusion.value = eval(conclusion.value);
 }
 function press(x) {
   conclusion.value += x;
+}
+function reset() {
+  conclusion.value = "";
 }
