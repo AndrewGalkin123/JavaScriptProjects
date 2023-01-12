@@ -14,6 +14,7 @@ var twoSum = function(nums, target) {
             }
             count++;
         }while(count < nums.length)
+
     }
 }
 console.log(twoSum([1,3,4,2],6));
