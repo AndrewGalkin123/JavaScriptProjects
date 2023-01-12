@@ -7,6 +7,7 @@ var addTwoNumbers = function(l1, l2) {
     return array = (""+result).split("").map(Number).reverse();
 };
 console.log(addTwoNumbers([0],[0]));
+
 function reverse(arg=[]){
     let reversed = []
     for (let i = 0; i<arg.length; i++){
