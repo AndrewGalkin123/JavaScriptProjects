@@ -1,3 +1,4 @@
+
 var addTwoNumbers = function(l1, l2) {
     var first = [l1.val], second = [l2.val];
     var node1 = l1.next, node2 = l2.next;
@@ -12,3 +13,4 @@ var addTwoNumbers = function(l1, l2) {
     const res = (BigInt(first.join(``)) + BigInt(second.join(``))).toString();
     return res.split(``).slice(1).reduce((head, val) => new ListNode(val, head), new ListNode(res[0]));
 };
+console.log(addTwoNumbers([5,2,2],[7,1,7]));
