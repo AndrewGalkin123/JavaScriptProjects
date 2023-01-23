@@ -1,71 +1,47 @@
 var romanToInt = function (s) {
     var result = 0;
-    var arr = [];
-    console.log(s);
     for (var i = 0; i < s.length; i++) {
-        if(i  < s.length)
-            arr[0] = s[i] + s[i+1];
-        console.log(result);
-        console.log(arr[0])
-        var I = 1;
-        var V = 0;
-        var X = 10;
-        var L = 50;
-        var C = 100;
-        var D = 500;
-        var M = 1000;
-        if (arr.indexOf('IV') !== -1) {
-            I = 0;
-            V = 4;
-            console.log(V);
-        }
-        if (arr.includes("IX")) {
-            I = 0;
-            X = 9;
-        }
-        if (arr.includes("XL")) {
-            X = 0;
-            L = 40;
-        }
-        if (arr.includes("XC")) {
-            X = 0;
-            C = 90;
-        }
-        if (arr.includes("CD")) {
-            C = 0
-            D = 400;
-        }
-        if (arr.includes("CM")) {
-            C = 0;
-            M = 900;
-        }
-        switch (s[i]) {
-            case "I":
-                result += I;
-                break;
-            case "V":
-                result += V;
-                break;
-            case "X":
-                result += X;
-                break;
-            case "L":
-                result += L;
-                break;
-            case "C":
-                result += C;
-                break;
-            case "D":
-                result += D;
-                break;
-            case "M":
-                result += M;
-                break;
+        if (s[i] === "I") {
+            if (s.includes("V",i+1)) {
+                result += 4;
+                i += 1;
+            } else if (s.includes("X",i+1)){
+                result += 9;
+                i += 1;
+            } else if(s.includes("I")){
+                result++;
+            }
+        } else if (s[i] === "V") {
+            result += 5;
+        } else if (s[i] === "X") {
+            if (s.includes("L",i+1)) {
+                result += 40;
+                i += 1;
+            } else if (s.includes("C",i+1)){
+                result += 90;
+                i += 1;
+            } else if(s.includes("X")){
+                result+=10;
+            }
+        } else if (s[i] === "L") {
+            result += 50;
+        } else if (s[i] === "C") {
+            if (s.includes("D",i+1)) {
+                result += 400;
+                i += 1;
+            } else if (s.includes("M",i+1)){
+                result += 900;
+                i += 1;
+            } else if(s.includes("C")){
+                result+=100;
+            }
+        } else if (s[i] === "D") {
+            result += 500;
+        } else if (s[i] === "M") {
+            result += 1000;
         }
 
     }
-
     return result;
 }
-console.log(romanToInt("IV"));
-//indexOf = придумай что то с этим
+console.log(romanToInt("DCXXI"));
