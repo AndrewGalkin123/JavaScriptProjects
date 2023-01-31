@@ -1,4 +1,4 @@
-var longestCommonPrefix = function(strs) {
+var longestCommonPrefix = function (strs) {
     // var result = [];
     // for (let i = 0; i < strs.length; i++) {
     //     for (let j = 0; j < strs[i].length; j++) {
@@ -11,11 +11,19 @@ var longestCommonPrefix = function(strs) {
     //     }
     // }
     // return result[0];
-    for (let i = 0; i < strs.length; i++) {
-        var count = 1;
-        do{
-
-        }while(count < strs.length)
+    var result = "";
+    if(strs.length===1){
+        result += strs[0];
     }
+    for (let i = 1; i < strs.length; i++) {
+        for (let j = 0; j < strs[i].length; j++) {
+            if (i !== strs.length - 1) {
+                if (strs[i][j] === strs[i + 1][j] && strs[i][j] === strs[i -1][j]) {
+                    result += strs[i][j];
+                }
+            }
+        }
+    }
+    return result;
 };
-console.log(longestCommonPrefix(["flower","flow","flight"]));
+console.log(longestCommonPrefix(["ab", "a"]));
