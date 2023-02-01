@@ -59,25 +59,50 @@ var longestCommonPrefix = function (strs) {
     //     }
     // }
     // return [...new Set(test(result))].join('');
-    var result = "";
+    // var result = "";
+    //
+    // function test(t) {
+    //     if (t === "undefined") {
+    //         return "";
+    //     }
+    //     return t;
+    // }
+    // if (strs.length === 1) {
+    //     result += strs[0];
+    // }
+    // for (let i = 1; i < strs.length; i++) {
+    //     do {
+    //         if (strs[i + 1][i] === strs[i][i] && strs[i - 1][i] === strs[i][i]) {
+    //             result += strs[i][i];
+    //         }
+    //
+    //     }while(i===strs.length)
+    // }
+    // return test(result);
 
-    function test(t) {
-        if (t === "undefined") {
-            return "";
-        }
-        return t;
-    }
-    if (strs.length === 1) {
-        result += strs[0];
-    }
-    for (let i = 1; i < strs.length; i++) {
-        do {
-            if (strs[i + 1][i] === strs[i][i] && strs[i - 1][i] === strs[i][i]) {
-                result += strs[i][i];
+    // if (!strs.length) return "";
+    // if(strs.length===1) return strs[0];
+    // if(strs[0] === "") return "";
+    // for (let i = 0; i <= strs[0].length; i++) {
+    //     for (let j = 1; j < strs.length; j++) {
+    //         if (strs[0][i] !== strs[j][i]) {
+    //             return strs[0].slice(0, i);
+    //         }
+    //     }
+    // }
+    let cur = strs[0]
+    let temp = ""
+    for(let i = 1; i < strs.length; i++){
+        for(let j = 0; j < cur.length; j++){
+            if(cur[j] == strs[i][j]){
+                temp += cur[j]
+            } else {
+                break
             }
-
-        }while(i===strs.length)
+        }
+        cur = temp
+        temp = ""
     }
-    return test(result);
+    return cur
 };
-console.log(longestCommonPrefix(["aaa", "aa", "aaa"]));
+console.log(longestCommonPrefix(["",""]));
