@@ -1,0 +1,52 @@
+header {
+	background-color: #444;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.excurstion {
+	width: 300px;
+	margin: 20px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	box-shadow: 2px 2px 5px #ccc;
+}
+
+.excurstion img {
+	max-width: 100%;
+}
+
+.excurstion h3 {
+	margin-top: 0;
+}
+
+.excurstion p {
+	margin-bottom: 20px;
+}
+
+.excurstion a {
+	display: block;
+	background-color: #444
+}
