@@ -1,0 +1,14 @@
+{
+  "name": "javascriptprojects",
+  "version": "1.0.0",
+  "description": "selfdevelopment",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "dependencies": {
+    "currency-converter-lt": "^2.0.0-beta.0"
+  }
+}
