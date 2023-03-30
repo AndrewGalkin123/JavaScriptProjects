@@ -1,0 +1,62 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 420px;
+    height: 230px;
+    
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
+    background:  #eee url(https://i.gifer.com/1jzv.gif) no-repeat left top ;
+    background-size: cover;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 175px;
+    width: 175px;
+    left: 15px;
+    bottom: 27px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    background-color: #ccc;
+    opacity: 0.5;
+    
+}
+
+input:checked+.slider {
+    background: #eee url(https://99px.ru/sstorage/86/2017/05/image_862605171226077570124.gif) no-repeat left top;
+    background-size:cover;
+    
+}
+input:focus+.slider {
+    background: #eee url(https://99px.ru/sstorage/86/2017/05/image_862605171226077570124.gif) no-repeat left top;
+    background-size: cover;
+   
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(212px);
+    -ms-transform: translateX(212px);
+    transform: translateX(212px);
+}
+
+.slider.round {
+    border-radius: 160px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
