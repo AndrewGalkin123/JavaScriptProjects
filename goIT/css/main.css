@@ -1,0 +1,30 @@
+
+body { 
+    background-color: #E5E5E5;
+    padding: 54px 40px 24px 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-content { 
+    padding: 88px;
+
+}
+
+h2 { 
+    font-size: 35px;
+}
+
+.project-item {
+    background-color: yellow;
+}
+
+.my-profession {
+    margin-bottom: 18px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    background: #fff;
+    width: 1200px;
+    margin: 0 auto;
+}
