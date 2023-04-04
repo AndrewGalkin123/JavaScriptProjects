@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>firstSite</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/header.css" />
   </head>
   <body>
     <header>
-      <img
-        id="main-logo"
-        src="https://flomaster.club/uploads/posts/2022-12/1672418669_flomaster-club-p-samolet-illyustratsiya-vkontakte-4.png"
-      />
+      <img id="main-logo" src="./img/earth.png" />
       <nav>
         <ul>
           <li>
-            <button class="region" onclick="window.location.href = index.html">
+            <button
+              class="navigation-button"
+              onclick="window.location.href = index.html"
+            >
               Открытия
             </button>
           </li>
           <li>
-            <button class="region" onclick="window.location.href = index.html">
+            <button
+              class="navigation-button"
+              onclick="window.location.href = index.html"
+            >
               Культура
             </button>
           </li>
           <li>
-            <button class="region" onclick="window.location.href = index.html">
+            <button
+              class="navigation-button"
+              onclick="window.location.href = index.html"
+            >
               Приключение
             </button>
           </li>
@@ -39,11 +52,12 @@
           </label>
 
           <ul class="menubox">
-            <li><a class="menu-item" href="#">Home</a></li>
-            <li><a class="menu-item" href="#">About us</a></li>
-            <li><a class="menu-item" href="#">Blog</a></li>
-            <li><a class="menu-item" href="#">Articles</a></li>
-            <li><a class="menu-item" href="#">Contacts</a></li>
+            <li><a class="menu-item" href="#">Наши услуги</a></li>
+            <li><a class="menu-item" href="#">Про нас</a></li>
+            <li><a class="menu-item" href="#">Новости</a></li>
+            <li><a class="menu-item" href="#">История проекта</a></li>
+            <li><a class="menu-item" href="#">Наша команда</a></li>
+            <li><a class="menu-item" href="#">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -77,7 +91,11 @@
         </ul>
       </div>
       <!-- Соц-сети -->
-      <div>Мы в соцсетях</div>
+      <div class="SocMedia">Мы в соцсетях:</div>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
     </footer>
   </body>
 </html>
