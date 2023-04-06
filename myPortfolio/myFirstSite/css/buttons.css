@@ -46,7 +46,10 @@
 }
 
 .menubox {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     visibility: hidden;
     top: 84px;
@@ -55,20 +58,26 @@
     height: 400px;
     margin: 0;
     list-style: none;
-    background-color: #1f548d;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    background-color: rgba(23, 96, 164, 0.9);
     transition-duration: .25s;
 }
 
 .menu-item {
-
-    color: black;
-    margin-left: 88px;
-    font-size: 15px;
-    font-weight: 600;
+    color: white;
+    margin: 0 0 20px 0px;
+    font-size: 20px;
     text-decoration: none;
     transition-duration: .25s;
+    border: 4px solid transparent;
+    box-sizing: border-box;
+    width: 200px;
+    text-align: center;
+}
 
+.menu-item:hover {
+    border-bottom: 4px solid #51e297;
+    width: 200px;
+    color: #51e297;
 }
 
 #menu-toggle {
