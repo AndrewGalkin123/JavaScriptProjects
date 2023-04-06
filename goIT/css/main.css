@@ -98,6 +98,18 @@ body {
     margin: 0;
 }
 
+.some-information {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin: 0;
+    margin-left: -20px;
+    margin-bottom: 16px;
+
+}
+
 .main-content-university {
     font-style: normal;
     font-weight: 700;
