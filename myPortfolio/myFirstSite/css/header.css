@@ -9,6 +9,7 @@ header {
     width: 100%;
     display: flex;
     overflow: hidden;
+
 }
 
 header::before {
@@ -27,7 +28,7 @@ header::before {
 /* background-repeat: no-repeat; */
 /* background-attachment: fixed; */
 /* -webkit-background-size: cover; */
-/* -moz-background-size: cover; */
+/* -webkit-background-size: cover; */
 /* -o-background-size: cover; */
 
 #main-logo {
