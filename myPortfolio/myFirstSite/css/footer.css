@@ -1,60 +1,67 @@
-footer {
-    background-color: #383838;
+* {
+	margin-top: 0;
+	padding: 0;
+	font-family: "Poppins", "sans-serify";
+	box-sizing: border-box;
+}
+
+.footer {
+	width: 100%;
+	padding: 100px 15%;
+	background: #333;
+	color: #efefef;
+	display: flex;
     height: 400px;
-    padding: 1rem 2rem;
-    text-align: center;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+.footer div {
+	text-align: center;
 }
 
-footer p {
-    margin: 0;
-    color: white;
+.col-2 {
+	flex-grow: 2;
 }
 
-.fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
+.footer div h3 {
+	font-weight: 300;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+.col-1 a {
+	display: block;
+	text-decoration: none;
+	color: #efefef;
+	margin-bottom: 10px;
+}
+
+form input {
+	width: 400px;
+	height: 45px;
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	outline: none;
+	border: none;
+}
+
+form button {
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 30px;
+	padding: 10px 30px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.SocialMedia a{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 30px;
     text-decoration: none;
-    border-radius: 50%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
+    color: #fff; 
 }
 
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-facebook {
-    background: #125688;
-    color: white;
-}
-
-.fa-twitter {
-    background: #125688;
-    color: white;
-}
-
-.fa-google {
-    background: #125688;
-    color: white;
-
-}
-
-.SocMedia {
-    color: white;
-    position: absolute;
-    top: 2085px;
-    left: 710px;
-}
