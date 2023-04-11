@@ -24,5 +24,16 @@ var addTwoNumbers1 = function(l1, l2) {
     return array = (""+result).split("").map(Number).reverse();
 };
 console.log(addTwoNumbers1([2,4,3],  [5,6,4]));
-console.log(reverse([2,5,1])) ;
+console.log(reverse([2, 5, 1]));
 
+
+let number1 = 1
+
+const doSomething = () => {
+    
+    
+    for (let i = 0; i < 10; i++){
+        console.log(number1)
+        console.log(number2)
+    }
+}

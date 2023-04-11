@@ -11,51 +11,80 @@ body {
 
 main {
     height: 2000px;
-    margin: 0 auto;
     background-color: #daecfd;
+
+
 }
 
 .slider {
-    align-items: center;
-    max-height: 1920px;
-    width: 100%;
-    overflow: hidden;
-}
 
-.slides {
-    display: flex;
-    width: 300%;
-}
-
-.slide {
     width: 100%;
     height: 500px;
-    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.middle {
+    top: 330px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navigation {
-    position: relative;
-    bottom: 20px;
+    position: absolute;
+    bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-
-
+    display: flex;
 }
 
-.prev,
-.next {
-
-    padding: 10px 20px;
-    background-color: #fff;
-    border: none;
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
     cursor: pointer;
+    background-color: #ddd;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: all .4 ease;
+}
+
+.bar:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+input[name="point"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
 
 }
 
-.prev {
-    margin-right: 10px;
+.slide {
+    width: 35%;
+    transition: all .6s ease;
 }
 
-.next {
-    margin-left: 10px;
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#point-1:checked~.s1 {
+    margin-left: 0;
+}
+
+#point-2:checked~.s1 {
+    margin-left: -35%;
+}
+
+#point-3:checked~.s1 {
+    margin-left: -70%;
 }
