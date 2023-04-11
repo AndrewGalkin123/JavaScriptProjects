@@ -62,6 +62,7 @@ nav ul li {
     height: 77px;
     width: 150px;
     background-color: rgba(28, 28, 28, 0);
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #fff;
     transition: all 0.3s ease;
