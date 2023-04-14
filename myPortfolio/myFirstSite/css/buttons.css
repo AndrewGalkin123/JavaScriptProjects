@@ -1,4 +1,8 @@
 /* Burger menu */
+html {
+    scroll-behavior: smooth;
+}
+
 .menu-btn {
     margin-top: 25px;
     margin-right: 30px;
