@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     position: fixed;
     background: url(https://look.com.ua/pic/201908/1920x1080/look.com.ua-352038.jpg);
@@ -33,7 +37,8 @@ header::before {
 /* -o-background-size: cover; */
 
 #main-logo {
-    margin-left: 20px;
+    margin-left: 0.7%;
+    margin-top: 5px;
     height: 50px;
     width: 50px;
 }

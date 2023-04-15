@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,15 +10,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>firstSite</title>
+    <title>SoarSoal</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/buttons.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/DDSLoader.js"></script>
   </head>
   <body>
     <header>
-      <img id="main-logo" src="./img/1425296170.png" />
+      <img id="main-logo" src="./img/logo.png" />
       <nav>
         <ul>
           <li>
@@ -68,25 +71,10 @@
           <input type="radio" name="point" id="point-1" checked />
           <input type="radio" name="point" id="point-2" />
           <input type="radio" name="point" id="point-3" />
-
-          <div class="slide s1">
-            <img
-              src="https://balitourus.com/wp-content/uploads/balitourus_home.jpg"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://pulse.imgsmail.ru/imgpreview?mb=pulse&key=pic6523717745833612209"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="https://turako.ru/wp-content/uploads//2021/07/Abhaziya.jpg"
-              alt=""
-            />
-          </div>
+          <h1 id="company-name">SoarSoal</h1>
+          <div class="slide s1" id="slide-1"></div>
+          <div class="slide" id="slide-2"></div>
+          <div class="slide" id="slide-3"></div>
         </div>
         <div class="navigation">
           <label for="point-1" class="bar"></label>
@@ -95,39 +83,39 @@
         </div>
       </div>
     </main>
-  <footer>
-    <div class="footer">
-      <div class="col-1">
-        <h3>Полезные ссылки:</h3>
-        <a href="">Наши услуги</a>
-        <a href="">О нас</a>
-        <a href="">Новости</a>
-        <a href="">История проекта</a>
-        <a href="">Наша команда</a>
-      </div>
-      <div class="col-2">
-        <h3>Оповещения</h3>
-        <form>
-          <input type="email" placeholder="Ваш Email адресс" required>
-          <br>
-          <button type="submit">Подписаться</button>
-        </form>
-      </div>
-      <div class="col-3">
-        <h3><div id="contact">Контакты:</div></h3>
-        <ul>
-          <li>Телефон: (xxx)xxx-xx-xx</li>
-          <li>Email: info@example.com</li>
-        </ul>
+    <footer>
+      <div class="footer">
+        <div class="col-1">
+          <h3>Полезные ссылки:</h3>
+          <a href="">Наши услуги</a>
+          <a href="">О нас</a>
+          <a href="">Новости</a>
+          <a href="">История проекта</a>
+          <a href="">Наша команда</a>
+        </div>
+        <div class="col-2">
+          <h3>Оповещения</h3>
+          <form>
+            <input type="email" placeholder="Ваш Email адресс" required />
+            <br />
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <h3><div id="contact">Контакты:</div></h3>
+          <ul>
+            <li>Телефон: (xxx)xxx-xx-xx</li>
+            <li>Email: info@example.com</li>
+          </ul>
           <div class="SocialMedia">
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
           </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
