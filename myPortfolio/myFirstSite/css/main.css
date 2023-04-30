@@ -16,7 +16,9 @@ body {
 main {
     height: 2000px;
     background-color: #daecfd;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -36,8 +38,9 @@ main {
     width: 100%;
     height: 500px;
     overflow: hidden;
-    z-index: 1;
+    z-index: 7;
     margin-left: -1px;
+    align-self: flex-start;
 
 }
 
@@ -100,4 +103,35 @@ input[name="point"] {
 
 #point-3:checked~.s1 {
     margin-left: -70%;
+}
+
+.discoveries-container {
+    margin-top: 630px;
+    justify-content: center;
+}
+
+.discoveries {
+    width: 150px;
+    bottom: 17px;
+    top: 17px;
+    
+    background-color: #daecfd;
+    position: relative;
+    font-size: 30px;
+    z-index: 2;
+}
+
+.discoveries-line{
+    width: 100%;
+    z-index: 1;
+}
+
+.discoveries-helper{
+    background-color: #daecfd;
+    position: relative;
+    width: 15px;
+    z-index: 3;
+    top: 40px;
+    height: 30px;
+    right: 15px;
 }
