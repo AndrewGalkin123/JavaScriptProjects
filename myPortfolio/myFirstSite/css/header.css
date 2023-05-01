@@ -80,7 +80,7 @@ nav ul li {
 }
 
 .navigation-button:hover {
-    border-bottom: 4px solid #51e297;
+    border-bottom: 4px solid #38b434;
 }
 
 .navigation-button:after {
@@ -90,7 +90,7 @@ nav ul li {
     left: 0;
     right: 0;
     height: 4px;
-    background-color: #51e297;
+    background-color: #38b434;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }

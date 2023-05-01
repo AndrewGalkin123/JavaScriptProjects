@@ -32,7 +32,7 @@
 .menu-btn:hover>span,
 .menu-btn:hover>span::before,
 .menu-btn:hover>span::after {
-    background-color: #51e297;
+    background-color: #38b434;
 }
 
 
@@ -77,9 +77,9 @@
 }
 
 .menu-item:hover {
-    border-bottom: 4px solid #51e297;
+    border-bottom: 4px solid #38b434;
     width: 200px;
-    color: #51e297;
+    color: #38b434;
 }
 
 #menu-toggle {
