@@ -113,23 +113,21 @@ input[name="point"] {
 .discoveries {
     width: 150px;
     bottom: 17px;
-    top:17px;
+    top: 17px;
     background-color: #daecfd;
     position: relative;
     font-size: 30px;
     z-index: 2;
 }
-.discoveries p{
-    color: rgb(44, 42, 42);
-}
 
-.discoveries-line{
+
+.discoveries-line {
     opacity: 0.6;
     width: 100%;
     z-index: 1;
 }
 
-.discoveries-helper{
+.discoveries-helper {
     background-color: #daecfd;
     position: relative;
     width: 15px;
@@ -139,35 +137,48 @@ input[name="point"] {
     right: 15px;
 }
 
-.photo-container{
+.photo-container {
     text-align: center;
 }
 
-.first-row img { 
+.first-row img {
+    margin-right: 14px;
     margin-top: 40px;
     width: 300px;
     height: 300px;
+    z-index: 1;
 }
 
 .second-row img {
+    margin-right: 14px;
     margin-top: -5px;
     width: 300px;
     height: 300px;
 }
 
-.discoveries-photos-button { 
-   margin-top: 30px;
-   font-size: 17px;
-   border-radius: 4px;
-   border: none;
-   color: white;
-   width: 300px;
-   height: 40px;
-   background-color: #38b434;
-   
+.discoveries-photos-button {
+    margin-top: 30px;
+    font-size: 17px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    width: 300px;
+    height: 40px;
+    background-color: #38b434;
+
 }
 
-.discoveries-photos-button:hover { 
+.discoveries-photos-button:hover {
     background-color: #3ec73a;
-    
+
+}
+
+.first-row .block {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    margin-top: -84px;
+    z-index: 10;
+    transition: 0.3s;
+    opacity: 0.7;
 }
