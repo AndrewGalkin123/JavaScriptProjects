@@ -120,7 +120,6 @@ input[name="point"] {
     z-index: 2;
 }
 
-
 .discoveries-line {
     opacity: 0.6;
     width: 100%;
@@ -138,23 +137,52 @@ input[name="point"] {
 }
 
 .photo-container {
-    text-align: center;
+    width: 1252px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.first-row img {
-    margin-right: 14px;
-    margin-top: 40px;
-    width: 300px;
-    height: 300px;
-    z-index: 1;
+.first-row,
+.second-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -18px;
 }
 
+.first-row img,
 .second-row img {
-    margin-right: 14px;
-    margin-top: -5px;
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  margin-right: 13px;
 }
+
+.first-row .block,
+.second-row .block {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  margin-top: -84px;
+  z-index: 10;
+  transition: 0.3s;
+  opacity: 0.7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.image-container {
+    flex-basis: calc(25% - 10px);
+    margin-bottom: 28px;
+  }
 
 .discoveries-photos-button {
     margin-top: 30px;
@@ -165,20 +193,17 @@ input[name="point"] {
     width: 300px;
     height: 40px;
     background-color: #38b434;
-
+    
 }
 
 .discoveries-photos-button:hover {
     background-color: #3ec73a;
-
+}
+.first-row .block:hover,
+.second-row .block:hover {
+    background-color: #38b434;
 }
 
-.first-row .block {
-    width: 300px;
-    height: 80px;
-    position: absolute;
-    margin-top: -84px;
-    z-index: 10;
-    transition: 0.3s;
-    opacity: 0.7;
-}
+.image-container:hover .block {
+    background-color: #38b434;
+  }

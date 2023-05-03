@@ -33,21 +33,3 @@ rotate360("./img/winter-2383930.jpg", "slide-1");
 rotate360("./img/hong-kong-7361979.jpg", "slide-2");
 rotate360("./img/panorama-5969540.jpg", "slide-3");
 
-const block = document.querySelector('.first-row .block');
-const image = document.querySelector('.first-row img');
-
-image.addEventListener('mouseover', function() {
-  block.style.backgroundColor = '#38b434';
-});
-
-block.addEventListener('mouseover', function() {
-    block.style.backgroundColor = '#38b434';
-  });
-
-image.addEventListener('mouseout', function() {
-      block.style.backgroundColor = 'initial';
-});
-  
-block.addEventListener('mouseout', function() {
-      block.style.backgroundColor = 'initial';
-});
