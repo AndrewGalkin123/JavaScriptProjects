@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    height: 2000px;
+    height: 3000px;
     background-color: #daecfd;
     display: flex;
     flex-direction: column;
@@ -105,12 +105,12 @@ input[name="point"] {
     margin-left: -70%;
 }
 
-.discoveries-container {
+.excursion-container {
     margin-top: 570px;
     justify-content: center;
 }
 
-.discoveries {
+.excursion {
     width: 150px;
     bottom: 17px;
     top: 17px;
@@ -120,13 +120,13 @@ input[name="point"] {
     z-index: 2;
 }
 
-.discoveries-line {
+.line {
     opacity: 0.6;
     width: 100%;
     z-index: 1;
 }
 
-.discoveries-helper {
+.block-helper {
     background-color: #daecfd;
     position: relative;
     width: 15px;
@@ -184,7 +184,7 @@ input[name="point"] {
     margin-bottom: 28px;
   }
 
-.discoveries-photos-button {
+.photos-button {
     margin-top: 30px;
     font-size: 17px;
     border-radius: 4px;
@@ -196,7 +196,7 @@ input[name="point"] {
     
 }
 
-.discoveries-photos-button:hover {
+.photos-button:hover {
     background-color: #3ec73a;
 }
 .first-row .block:hover,
@@ -207,3 +207,19 @@ input[name="point"] {
 .image-container:hover .block {
     background-color: #38b434;
   }
+
+.history-container{
+    margin-top: 40px;
+    justify-content: center;
+}
+.history {
+    width: 139px;
+    bottom: 17px;
+    top: 17px;
+    background-color: #daecfd;
+    position: relative;
+    font-size: 30px;
+    z-index: 2;
+}
+
+
