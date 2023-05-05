@@ -4,3 +4,4 @@ var plusOne = function (digits) {
     return result.toString(10).split('').map(int => parseInt(int, 10));
 };
 console.log(plusOne([1, 2, 3]));
+
