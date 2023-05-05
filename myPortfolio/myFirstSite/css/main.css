@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    height: 3000px;
+    height: 4000px;
     background-color: #daecfd;
     display: flex;
     flex-direction: column;
@@ -111,7 +111,7 @@ input[name="point"] {
 }
 
 .excursion {
-    width: 150px;
+    width: 157px;
     bottom: 17px;
     top: 17px;
     background-color: #daecfd;
@@ -146,43 +146,44 @@ input[name="point"] {
 
 .first-row,
 .second-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: -18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -18px;
 }
 
 .first-row img,
 .second-row img {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  z-index: 1;
-  margin-right: 13px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    margin-right: 13px;
+    border-radius: 4px;
 }
 
 .first-row .block,
 .second-row .block {
-  width: 300px;
-  height: 80px;
-  position: absolute;
-  margin-top: -84px;
-  z-index: 10;
-  transition: 0.3s;
-  opacity: 0.7;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    margin-top: -84px;
+    z-index: 10;
+    transition: 0.3s;
+    opacity: 0.7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 .image-container {
     flex-basis: calc(25% - 10px);
     margin-bottom: 28px;
-  }
+}
 
 .photos-button {
     margin-top: 30px;
@@ -193,12 +194,13 @@ input[name="point"] {
     width: 300px;
     height: 40px;
     background-color: #38b434;
-    
+
 }
 
 .photos-button:hover {
     background-color: #3ec73a;
 }
+
 .first-row .block:hover,
 .second-row .block:hover {
     background-color: #38b434;
@@ -206,14 +208,17 @@ input[name="point"] {
 
 .image-container:hover .block {
     background-color: #38b434;
-  }
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
 
-.history-container{
+.history-container {
     margin-top: 40px;
     justify-content: center;
 }
+
 .history {
-    width: 139px;
+    width: 134px;
     bottom: 17px;
     top: 17px;
     background-color: #daecfd;
@@ -222,4 +227,38 @@ input[name="point"] {
     z-index: 2;
 }
 
+.odessa-map {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.odessa-map hr {
+    position: relative;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    background-color: #daecfd;
+
+}
+
+.text p {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.odessa-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2300px
+}
+
+.odessa-photo {
+    width: 80%;
+}
