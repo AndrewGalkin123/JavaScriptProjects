@@ -251,7 +251,7 @@ input[name="point"] {
     font-size: 30px;
 }
 
-.odessa-photo-container {
+.odessa-map-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,6 +259,3 @@ input[name="point"] {
     top: 2300px
 }
 
-.odessa-photo {
-    width: 80%;
-}

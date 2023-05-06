@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./css/header.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/DDSLoader.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
@@ -192,13 +195,12 @@
       <div class="text">
         <p>Карта Одессы. Места съемок</p>
       </div>
-      <div class="odessa-photo-container">
-        <img class="odessa-photo" src="./img/odessaPhoto.png" alt="Odessa">
+      <div class="odessa-map-container">
         <!-- добавить метки на карту вместе с ссылками на фотки и их историю -->
       </div>
-      
-      
 
+
+      
 
 
     </div>
@@ -243,7 +245,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/main.js"></script>
+  <script src="./js/main.js"  type="text/babel"></script>
 </body>
 
 </html>
