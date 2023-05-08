@@ -1,9 +1,24 @@
-import './App.css';
+import React from "react";
+import Excursion from './components/Excursion'
+import OdessaMap from './components/OdessaMap'
+import Header from './components/Header'
+import Slider from './components/Slider'
+import * as THREE from 'three';
 
-function App() {
-  return (
-    <div></div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header></Header>
+        <Slider></Slider>
+
+      </div>
+
+    );
+
+
+  }
 }
+
 
 export default App;
