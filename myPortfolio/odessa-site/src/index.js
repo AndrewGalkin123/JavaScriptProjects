@@ -9,4 +9,3 @@ import './css/header.css'
 
 const app = ReactDOMClient.createRoot(document.getElementById("app"))
 app.render(<App />)
-

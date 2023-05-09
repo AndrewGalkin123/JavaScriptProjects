@@ -1,8 +1,57 @@
 import React from 'react';
+import * as THREE from 'three';
+import beach from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/beach-3531358.jpg'
 
+function rotate360(imageUrl, slideId) {
+  const slideElement = document.getElementById(slideId);
+
+
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(slideElement.offsetWidth, slideElement.offsetHeight);
+
+  const canvas = renderer.domElement;
+  canvas.style.width = '100%';
+  canvas.style.height = '100%'; // изменено с 'auto' на '100%'
+
+  slideElement.appendChild(canvas);
+
+  const camera = new THREE.PerspectiveCamera(75, slideElement.offsetWidth / slideElement.offsetHeight, 0.1, 1000);
+  camera.position.set(0, 0, 0);
+
+  const scene = new THREE.Scene();
+
+  const geometry = new THREE.SphereGeometry(5, 32, 32);
+  const material = new THREE.MeshBasicMaterial({
+    map: new THREE.TextureLoader().load(imageUrl),
+    side: THREE.DoubleSide
+  });
+  const sphere = new THREE.Mesh(geometry, material);
+  scene.add(sphere);
+
+  const animate = function () {
+    requestAnimationFrame(animate);
+    sphere.rotation.y += 0.0015;
+    renderer.render(scene, camera);
+  };
+  animate();
+}
 
 class Slider extends React.Component {
-  render() { 
+
+  componentDidMount() {
+    
+    const slide1 = document.getElementById('slide-1');
+    const slide2 = document.getElementById('slide-2');
+    const slide3 = document.getElementById('slide-3');
+
+    
+    rotate360(beach, slide1.id);
+    // rotate360('D:/JavaScriptProjects/myPortfolio/odessa-site/src/images/panorama-5969540.jpg', slide2.id);
+    // rotate360('D:/JavaScriptProjects/myPortfolio/odessa-site/src/images/hong-kong-7361979.jpg', slide3.id);
+  }
+
+  render() {
     return (
       <div className="slider middle">
         <div className="slides">
@@ -21,12 +70,7 @@ class Slider extends React.Component {
         </div>
       </div>
     );
-   
   }
-  
 }
-
-
-
 
 export default Slider;
