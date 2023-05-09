@@ -1,38 +1,36 @@
 import React from 'react';
 import * as THREE from 'three';
-import beach from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/beach-3531358.jpg'
+import mountain from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/mountain-3531360.jpg'
+import winter from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/winter-2383930.jpg'
+import hongKong from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/hong-kong-7361979.jpg'
 
 function rotate360(imageUrl, slideId) {
-  const slideElement = document.getElementById(slideId);
-
-
-
-  const renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(slideElement.offsetWidth, slideElement.offsetHeight);
+  const renderer = new THREE.WebGLRenderer({antialias: true});
+  renderer.setSize(window.innerWidth, window.innerHeight);
 
   const canvas = renderer.domElement;
-  canvas.style.width = '100%';
-  canvas.style.height = '100%'; // изменено с 'auto' на '100%'
+  canvas.style.width = '100%'; /* Added this line */
+  canvas.style.height = 'auto'; /* Added this line */
 
-  slideElement.appendChild(canvas);
+  document.getElementById(slideId).appendChild(canvas);
 
-  const camera = new THREE.PerspectiveCamera(75, slideElement.offsetWidth / slideElement.offsetHeight, 0.1, 1000);
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   camera.position.set(0, 0, 0);
 
   const scene = new THREE.Scene();
 
   const geometry = new THREE.SphereGeometry(5, 32, 32);
   const material = new THREE.MeshBasicMaterial({
-    map: new THREE.TextureLoader().load(imageUrl),
-    side: THREE.DoubleSide
+      map: new THREE.TextureLoader().load(imageUrl),
+      side: THREE.DoubleSide
   });
   const sphere = new THREE.Mesh(geometry, material);
   scene.add(sphere);
 
   const animate = function () {
-    requestAnimationFrame(animate);
-    sphere.rotation.y += 0.0015;
-    renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+      sphere.rotation.y += 0.0015; // изменение скорости вращения
+      renderer.render(scene, camera);
   };
   animate();
 }
@@ -46,9 +44,9 @@ class Slider extends React.Component {
     const slide3 = document.getElementById('slide-3');
 
     
-    rotate360(beach, slide1.id);
-    // rotate360('D:/JavaScriptProjects/myPortfolio/odessa-site/src/images/panorama-5969540.jpg', slide2.id);
-    // rotate360('D:/JavaScriptProjects/myPortfolio/odessa-site/src/images/hong-kong-7361979.jpg', slide3.id);
+    rotate360(winter, slide1.id);
+    rotate360(hongKong, slide2.id);
+    rotate360(mountain, slide3.id);
   }
 
   render() {
