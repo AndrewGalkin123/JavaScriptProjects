@@ -3,11 +3,11 @@ import React from "react";
 class Excursion extends React.Component {
     render() {
         return (
-            <div class="">
+            <div class="excursion">
                 <hr></hr>
-                <div class="excursion">
-                    <p>Экскурсии</p>
-                </div>
+
+                <p>Экскурсии</p>
+
                 <div class="photo-container">
                     <div class="first-row">
                         <div class="image-container">

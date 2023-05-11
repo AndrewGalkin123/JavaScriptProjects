@@ -23,99 +23,84 @@ main {
 }
 
 #company-name {
-    width: max-content;
     position: absolute;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 80px;
     font-family: 'Yellowtail', cursive;
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
+    z-index: 6;
 }
 
-.slider {
-    align-items: center;
-    width: 100%;
+.slider{
+    position: absolute;
+    top: 80px;
     height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    z-index: 7;
-    margin-left: -1px;
-    align-self: flex-start;
-
 }
 
-.middle {
-    top: 330px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.navigation {
-    position: absolute;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.bar {
-    height: 8px;
-    width: 30px;
-    margin: 6px;
-    cursor: pointer;
-    background-color: #ddd;
-    opacity: 0.5;
-    border-radius: 10px;
-    transition: all .4 ease;
-}
-
-.bar:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
-}
-
-input[name="point"] {
-    position: absolute;
-    visibility: hidden;
-}
-
-.slides {
+.slides{
     width: 300%;
     height: 100%;
     display: flex;
 }
 
+.slides input{
+    display: none;
+}
+
 .slide {
     width: 35%;
     transition: all .6s ease;
+    
 }
 
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    
+}
 
-#point-1:checked~.s1 {
+.manual-btn{
+    
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: #40D3DC;
+}
+
+#radio1:checked ~ .first{
     margin-left: 0;
 }
 
-#point-2:checked~.s1 {
+#radio2:checked ~ .first{
     margin-left: -35%;
 }
 
-#point-3:checked~.s1 {
+#radio3:checked ~ .first{
     margin-left: -70%;
 }
 
-.excursion-container {
-    margin-top: 570px;
-    justify-content: center;
-}
-
 .excursion {
+    margin-top: 400px;
     width: 157px;
-    bottom: 17px;
-    top: 17px;
     background-color: #daecfd;
-    position: relative;
     font-size: 30px;
     z-index: 2;
 }
@@ -126,15 +111,7 @@ input[name="point"] {
     z-index: 1;
 }
 
-.block-helper {
-    background-color: #daecfd;
-    position: relative;
-    width: 15px;
-    z-index: 3;
-    top: 40px;
-    height: 30px;
-    right: 15px;
-}
+
 
 .photo-container {
     width: 1252px;
