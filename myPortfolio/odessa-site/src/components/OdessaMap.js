@@ -6,7 +6,7 @@ class OdessaMap extends React.Component {
             <div class="odessa-map">
                 <hr></hr>
                 <p>Карта Одессы. Места съемок</p>
-                <div class="odessa-map-container"></div>
+                <div class="odessa-map js-map"></div>
             </div>
         )
     }

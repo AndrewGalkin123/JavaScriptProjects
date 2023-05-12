@@ -54,7 +54,7 @@ class Slider extends React.Component {
       if(counter > 3){
           counter = 1;
       }
-    }, 5000)
+    }, 10000)
   }
 
   render() {
