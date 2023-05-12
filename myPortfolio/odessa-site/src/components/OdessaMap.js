@@ -1,16 +1,12 @@
 import React from "react";
 
 class OdessaMap extends React.Component {
-    render(){
+    render() {
         return (
             <div class="odessa-map">
                 <hr></hr>
-                    <div class="text">
-                        <p>Карта Одессы. Места съемок</p>
-                    </div>
-                    <div class="odessa-map-container">
-                       
-                    </div>
+                <p>Карта Одессы. Места съемок</p>
+                <div class="odessa-map-container"></div>
             </div>
         )
     }

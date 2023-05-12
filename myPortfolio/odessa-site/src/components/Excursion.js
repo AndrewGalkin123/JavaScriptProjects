@@ -4,10 +4,8 @@ class Excursion extends React.Component {
     render() {
         return (
             <div class="excursion">
-                <hr></hr>
-
+                <hr className="line"></hr>
                 <p>Экскурсии</p>
-
                 <div class="photo-container">
                     <div class="first-row">
                         <div class="image-container">

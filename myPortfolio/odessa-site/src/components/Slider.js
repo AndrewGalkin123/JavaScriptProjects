@@ -30,7 +30,7 @@ function rotate360(imageUrl, slideId) {
 
   const animate = function () {
     requestAnimationFrame(animate);
-    sphere.rotation.y += 0.0015; // изменение скорости вращения
+    sphere.rotation.y += 0.0014; // изменение скорости вращения
     renderer.render(scene, camera);
   };
   animate();
@@ -39,15 +39,22 @@ function rotate360(imageUrl, slideId) {
 class Slider extends React.Component {
 
   componentDidMount() {
-
     const slide1 = document.getElementById('slide-1');
     const slide2 = document.getElementById('slide-2');
     const slide3 = document.getElementById('slide-3');
 
-
     rotate360(winter, slide1.id);
     rotate360(hongKong, slide2.id);
     rotate360(mountain, slide3.id);
+
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById("radio" + counter).checked = true;
+      counter++;
+      if(counter > 3){
+          counter = 1;
+      }
+    }, 5000)
   }
 
   render() {

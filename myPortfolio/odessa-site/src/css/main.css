@@ -7,15 +7,16 @@
 
 
 body {
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-size: 100%;
+    background-color: #daecfd;
 }
 
 main {
     height: 4000px;
-    background-color: #daecfd;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +34,7 @@ main {
     z-index: 6;
 }
 
-.slider{
+.slider {
     position: absolute;
     top: 80px;
     height: 500px;
@@ -43,33 +44,33 @@ main {
     overflow: hidden;
 }
 
-.slides{
+.slides {
     width: 300%;
     height: 100%;
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
 .slide {
     width: 35%;
     transition: all .6s ease;
-    
+
 }
 
-.navigation-manual{
+.navigation-manual {
     position: absolute;
     width: 100%;
     margin-top: -40px;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.manual-btn{
-    
+.manual-btn {
+
     border: 2px solid #ffffff;
     padding: 5px;
     border-radius: 10px;
@@ -77,45 +78,87 @@ main {
     transition: 0.4s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 20px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: #40D3DC;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
     margin-left: -35%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked~.first {
     margin-left: -70%;
 }
 
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40D3DC;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #40D3DC;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #40D3DC;
+}
+
 .excursion {
-    margin-top: 400px;
-    width: 157px;
+    position: relative;
+    top: 650px;
+}
+
+.excursion p {
+    position: absolute;
+    padding: 20px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 20px;
     background-color: #daecfd;
     font-size: 30px;
-    z-index: 2;
 }
 
 .line {
+    position: relative;
     opacity: 0.6;
     width: 100%;
     z-index: 1;
 }
 
-
-
 .photo-container {
+    position: relative;
+    right: 0%;
     width: 1252px;
-    margin-top: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,27 +232,26 @@ main {
     border-bottom-right-radius: 4px;
 }
 
-.history-container {
-    margin-top: 40px;
-    justify-content: center;
+.history {
+    position: relative;
+    top: 730px;
 }
 
-.history {
-    width: 134px;
-    bottom: 17px;
-    top: 17px;
+.history p{
+    position: absolute;
+    padding: 20px;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 20px;
     background-color: #daecfd;
-    position: relative;
     font-size: 30px;
-    z-index: 2;
 }
 
 .odessa-map {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    top: 800px;
 }
 
 .odessa-map hr {
@@ -217,22 +259,13 @@ main {
     width: 100%;
 }
 
-.text {
+
+.odessa-map p {
     position: absolute;
-    background-color: #daecfd;
-
-}
-
-.text p {
     padding: 20px;
     font-size: 30px;
-}
-
-.odessa-map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 2300px
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #daecfd;
 }
 
