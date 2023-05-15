@@ -128,7 +128,6 @@ main {
 #radio3:checked~.navigation-auto .auto-btn3 {
     background: #40D3DC;
 }
-
 .excursion {
     position: relative;
     top: 650px;
@@ -237,7 +236,7 @@ main {
     top: 730px;
 }
 
-.history p{
+.history p {
     position: absolute;
     padding: 20px;
     left: 50%;
@@ -249,18 +248,19 @@ main {
     font-size: 30px;
 }
 
-.odessa-map {
+.odessa {
+
     position: relative;
     top: 800px;
 }
 
-.odessa-map hr {
+.odessa hr {
     position: relative;
     width: 100%;
 }
 
 
-.odessa-map p {
+.odessa p {
     position: absolute;
     padding: 20px;
     font-size: 30px;
@@ -269,3 +269,10 @@ main {
     background-color: #daecfd;
 }
 
+.odessa-map img {
+    position: relative;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

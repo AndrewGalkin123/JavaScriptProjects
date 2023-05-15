@@ -4,6 +4,8 @@ import OdessaMap from './components/OdessaMap'
 import Header from './components/Header'
 import Slider from './components/Slider'
 import History from './components/History'
+import Footer from './components/Footer'
+
 
 class App extends React.Component {
   render() {
@@ -14,6 +16,7 @@ class App extends React.Component {
         <Excursion></Excursion>
         <History></History>
         <OdessaMap></OdessaMap>
+      
       </div>
       
     );
