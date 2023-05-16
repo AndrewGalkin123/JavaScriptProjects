@@ -4,7 +4,7 @@ class Excursion extends React.Component {
     render() {
         return (
             <div class="excursion">
-                <hr className="line"></hr>
+                <hr></hr>
                 <p>Экскурсии</p>
                 <div class="photo-container">
                     <div class="first-row">

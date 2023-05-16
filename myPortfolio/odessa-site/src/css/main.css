@@ -32,16 +32,19 @@ main {
     top: 40%;
     transform: translateX(-50%);
     z-index: 6;
+   
 }
 
 .slider {
-    position: absolute;
+    position: relative;
+    display: block;
     top: 80px;
     height: 500px;
     width: 100%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
 
 .slides {
@@ -130,7 +133,7 @@ main {
 }
 .excursion {
     position: relative;
-    top: 650px;
+    top: 140px;
 }
 
 .excursion p {
@@ -145,7 +148,7 @@ main {
     font-size: 30px;
 }
 
-.line {
+.excursion hr {
     position: relative;
     opacity: 0.6;
     width: 100%;
@@ -271,8 +274,30 @@ main {
 
 .odessa-map img {
     position: relative;
-    top: 350px;
+    top: 31.25rem;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+svg{
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    
+}
 
+.description {
+    position: absolute;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    width: 18.75rem;
+    height: 25rem;
+    box-shadow:  0 0 2rem .625rem;
+    left: 3.125rem;
+    bottom: calc(50% - 12.5rem);
+    z-index: 3;
 }

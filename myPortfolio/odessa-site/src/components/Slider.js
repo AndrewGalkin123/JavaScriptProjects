@@ -30,7 +30,7 @@ function rotate360(imageUrl, slideId) {
 
   const animate = function () {
     requestAnimationFrame(animate);
-    sphere.rotation.y += 0.0014; // изменение скорости вращения
+    sphere.rotation.y += 0.001; // изменение скорости вращения
     renderer.render(scene, camera);
   };
   animate();
