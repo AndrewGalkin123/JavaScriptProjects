@@ -16,7 +16,7 @@ class App extends React.Component {
         <Excursion></Excursion>
         <History></History>
         <OdessaMap></OdessaMap>
-      
+        <Footer/>
       </div>
       
     );

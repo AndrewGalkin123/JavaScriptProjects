@@ -5,6 +5,7 @@ import App from "./App"
 import "./css/main.css"
 import "./css/buttons.css"
 import './css/header.css'
+import './css/footer.css'
 
 
 
