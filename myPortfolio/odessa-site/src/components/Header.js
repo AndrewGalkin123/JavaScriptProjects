@@ -3,17 +3,12 @@ import BurgerMenu from './BurgerMenu';
 import logo from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/logo.png'
 
 class Header extends React.Component {
-  render() { 
+  render() {
     return (
       <header>
-        <img id="main-logo" src={logo} alt='logo'/>
+        <img id="main-logo" src={logo} alt='logo' />
         <nav>
           <ul>
-            <li>
-              <button class="navigation-button" onClick={() => window.location.href = "index.html"}>
-                Экскурсии
-              </button>
-            </li>
             <li>
               <button class="navigation-button" onClick={() => window.location.href = "index.html"}>
                 История
@@ -24,9 +19,14 @@ class Header extends React.Component {
                 Культура
               </button>
             </li>
+            <li>
+              <button class="navigation-button" onClick={() => window.location.href = "index.html"}>
+                Фотогалерея
+              </button>
+            </li>
           </ul>
-          <BurgerMenu />
         </nav>
+        <BurgerMenu />
       </header>
     );
   }
