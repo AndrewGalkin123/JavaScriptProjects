@@ -4,11 +4,11 @@ import odessaStreet from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/
 import castle from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/977d3913-5162-4759-b4ed-e3098b40cf71.jpg'
 
 
+
 class Slider extends React.Component {
-  
   render() {
     return (
-     <div></div>
+      <div className='container'></div>
     )
   }
 }

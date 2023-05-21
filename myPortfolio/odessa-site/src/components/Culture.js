@@ -1,11 +1,11 @@
 import React from "react";
 
-class Excursion extends React.Component {
-    render() {
+class Culture extends React.Component{
+    render(){
         return (
-            <div class="excursion">
-                <hr></hr>
-                <p>Экскурсии</p>
+            <div class="culture">
+                <hr className="line"></hr>
+                <p>Культура</p>
                 <div class="photo-container">
                     <div class="first-row">
                         <div class="image-container">
@@ -56,7 +56,6 @@ class Excursion extends React.Component {
             </div>
         )
     }
-
 }
 
-export default Excursion;
+export default Culture;
