@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
-* { 
+* {
     margin: 0;
     padding: 0;
+   
 }
 
 .slider {
     position: relative;
     background-position: bottom;
-    max-width: 120rem;
     max-height: 600px;
     overflow: hidden;
     top: 80px;
 
+}
+
+.slider_img {
+    width: 100%;
 }
 
 .slider_line {
@@ -32,7 +36,7 @@
 
 .slider_btn-next {
     position: absolute;
-    right:  2%;
+    right: 2%;
     top: 50%;
     transform: translateY(-50%) rotate(90deg);
     background-color: transparent;
@@ -60,24 +64,28 @@
     background-color: white;
 }
 
-.active-dot { 
+.active-dot {
     background-color: white;
 }
 
-.slider_btn-next , .slider_btn-prev  { 
+.slider_btn-next,
+.slider_btn-prev {
     width: 50px;
 }
 
-@media (max-width: 850px)  {
-    .slider_btn-next , .slider_btn-prev {
+@media (max-width: 850px) {
+
+    .slider_btn-next,
+    .slider_btn-prev {
         width: calc(20px + (50-20) * ((100vw - 320px) / (850 - 320)))
     }
-    .slider_dot { 
+
+    .slider_dot {
         width: calc(10px + (16-10) * ((100vw - 320px) / (850 - 320)));
         height: calc(10px + (16-10) * ((100vw - 320px) / (850 - 320)));
     }
 
-    .slider_wrapper{
+    .slider_wrapper {
         column-gap: calc(15px +(10-5) * ((100vw - 320px) / (850-320)));
     }
 }
@@ -85,7 +93,7 @@
 
 .history {
     position: relative;
-    top: 10.625rem;
+    top: 130px;
 }
 
 .history p {
@@ -105,7 +113,7 @@
 .photo-container {
     position: relative;
     right: 0%;
-    width: 1252px;
+    width: 100%;
     margin: 0 auto;
     top: 2.5rem;
     display: flex;
@@ -130,6 +138,7 @@
     z-index: 1;
     margin-right: 13px;
     border-radius: 4px;
+    
 }
 
 .first-row .block,
@@ -137,7 +146,7 @@
     width: 300px;
     height: 80px;
     position: absolute;
-    margin-top: -80px;
+    margin-top: -84px;
     z-index: 3;
     transition: 0.3s;
     opacity: 0.7;
@@ -153,6 +162,34 @@
 .image-container {
     flex-basis: calc(25% - 10px);
     margin-bottom: 28px;
+}
+
+@media screen and (max-width: 990px) {
+    .second-row {
+        display: none;
+    }
+    .photo-container {
+        align-items: center;
+        justify-content: center;
+
+    }
+    .first-row {
+        flex-direction: column;
+    }
+    .first-row img {
+        margin-right: 0px;
+        width: 350px;
+        height: 350px;
+    }
+    .first-row .block{
+        width: 350px;
+    }
+    
+
+    .odessa {
+        display: none;
+    }
+
 }
 
 .photos-button {
@@ -221,23 +258,32 @@
 
 .odessa img {
     position: relative;
-    top: 24.9rem;
+    top: 400px;
     height: 700px;
     width: 1300px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-   
-    
+
+
 }
-svg{
+
+@media screen and (max-width: 990px) {
+    .odessa img {
+        width: 150%;
+        height: 400px;
+        overflow: hidden;
+    }
+}
+
+svg {
     position: absolute;
     top: 3.2rem;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 5;
-    
+
 }
 
 .description {
@@ -246,7 +292,7 @@ svg{
     box-sizing: border-box;
     width: 18.75rem;
     height: 25rem;
-    box-shadow:  0 0 2rem .625rem;
+    box-shadow: 0 0 2rem .625rem;
     left: 3.125rem;
     bottom: calc(50% - 12.5rem);
     z-index: 3;
