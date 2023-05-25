@@ -4,37 +4,44 @@ import React from "react";
 class Footer extends React.Component {
     render() {
         return (
-            <footer>
-                <div className="footer">
-                    <div className="col-1">
-                        <h3>Полезные ссылки:</h3>
-                        <a href="">Наши услуги</a>
-                        <a href="">О нас</a>
-                        <a href="">Новости</a>
-                        <a href="">История проекта</a>
-                        <a href="">Наша команда</a>
-                    </div>
-                    <div className="col-2">
-                        <h3>Оповещения</h3>
-                        <form>
-                            <input type="email" placeholder="Ваш Email адресс" required />
-                            <br />
-                            <button type="submit">Подписаться</button>
-                        </form>
-                    </div>
-                    <div className="col-3">
-                        <h3>
-                            <div id="contact">Контакты:</div>
-                        </h3>
-                        <ul>
-                            <li>Телефон: (xxx)xxx-xx-xx</li>
-                            <li>Email: info@example.com</li>
-                        </ul>
-                        <div class="SocialMedia">
-                            <a href="#" className="fa fa-instagram"></a>
-                            <a href="#" className="fa fa-facebook"></a>
-                            <a href="#" className="fa fa-twitter"></a>
-                            <a href="#" className="fa fa-google"></a>
+            <footer className="footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="footer-col">
+                            <h4>Компания</h4>
+                            <ul>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Наша команда</a></li>
+                                <li><a href="#">История проекта</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div className="footer-col">
+                            <h4>Текст</h4>
+                            <ul>
+                                <li><a href="#">Текст</a></li>
+                                <li><a href="#">Текст</a></li>
+                                <li><a href="#">Текст</a></li>
+                                <li><a href="#">Текст</a></li>
+                            </ul>
+                        </div>
+                        <div className="footer-col">
+                            <h4>Текст</h4>
+                            <ul>
+                                <li><a href="#">Текст</a></li>
+                                <li><a href="#">Текст</a></li>
+                                <li><a href="#">Текст</a></li>
+                                <li><a href="#">Текст</a></li>
+                            </ul>
+                        </div>
+                        <div className="footer-col">
+                            <h4>Наши соцсеты</h4>
+                            <div className="social-links">
+                                <a href="#"><i className="fab fa-telegram"></i></a>
+                                <a href="#"><i className="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-instagram"></i></a>
+                                <a href="#"><i className="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

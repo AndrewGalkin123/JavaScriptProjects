@@ -18,7 +18,7 @@ class App extends React.Component {
           <History></History>
           <Culture></Culture>
           <OdessaMap></OdessaMap>
-          
+          <Footer/>
         </main>
         
       </div>
