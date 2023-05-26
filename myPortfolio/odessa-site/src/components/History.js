@@ -7,7 +7,7 @@ class History extends React.Component {
             <div className="history">
                 <hr></hr>
                 <p>История</p>
-                <div  style={{ position: "relative", textAlign: "center", letterSpacing: '16px', marginBottom: '20px', overFlow: 'hidden', height: '80%' }}>
+                <div  style={{ position: "relative", textAlign: "center", letterSpacing: '16px', marginBottom: '20px', overFlow: 'hidden', height: '80%', maxWidth: "1400px" }}>
                     <div style={{ position: 'absolute', left: '-20px', top: '0', right: '-20px' }}>
                         <a className="photo_item">
                             <span className="photo_block-item"> </span>
