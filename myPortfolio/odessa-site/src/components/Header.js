@@ -1,6 +1,6 @@
 import React from 'react';
 import BurgerMenu from './BurgerMenu';
-import logo from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/logo.png'
+import logo from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/logo.png'
 
 class Header extends React.Component {
   render() {
@@ -10,17 +10,17 @@ class Header extends React.Component {
         <nav>
           <ul>
             <li>
-              <button class="navigation-button" onClick={() => window.location.href = "index.html"}>
+              <button className="navigation-button" onClick={() => window.location.href = "index.html"}>
                 История
               </button>
             </li>
             <li>
-              <button class="navigation-button" onClick={() => window.location.href = "index.html"}>
+              <button className="navigation-button" onClick={() => window.location.href = "index.html"}>
                 Культура
               </button>
             </li>
             <li>
-              <button class="navigation-button" onClick={() => window.location.href = "index.html"}>
+              <button className="navigation-button" onClick={() => window.location.href = "index.html"}>
                 Фотогалерея
               </button>
             </li>

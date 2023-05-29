@@ -1,9 +1,9 @@
 import React from 'react';
-import operaTheater from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/wepik-export-20230521115408LEpx.png'
-import odessaStreet from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/odessa-2560900_1920.jpg'
-import castle from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/977d3913-5162-4759-b4ed-e3098b40cf71.jpg'
+import operaTheater from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/wepik-export-20230521115408LEpx.png'
+import odessaStreet from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/odessa-2560900_1920.jpg'
+import castle from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/977d3913-5162-4759-b4ed-e3098b40cf71.jpg'
 import 'jquery'
-import odessa from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/odessa-2577800.jpg'
+import odessa from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/odessa-2577800.jpg'
 
 
 class Slider extends React.Component {

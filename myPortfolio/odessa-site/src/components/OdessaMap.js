@@ -1,5 +1,5 @@
 import React from "react";
-import odessaPhoto from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/img/odessa.png'
+import odessaPhoto from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/odessa.png'
 import $ from 'jquery';
 
 
