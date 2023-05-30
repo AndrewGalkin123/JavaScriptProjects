@@ -1,5 +1,5 @@
 import React from 'react';
-import operaTheater from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/wepik-export-20230521115408LEpx.png'
+
 import odessaStreet from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/odessa-2560900_1920.jpg'
 import castle from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/977d3913-5162-4759-b4ed-e3098b40cf71.jpg'
 import 'jquery'
@@ -66,13 +66,14 @@ class Slider extends React.Component {
     return (
       <div className='slider'>
         <div className='slider_line'>
-          <img className='slider_img' src={odessa} />
-          <img className='slider_img' src={odessaStreet} />
-          <img className='slider_img' src={castle} />
+          <img className='slider_img' src={odessa} alt='odessa'/>
+          <img className='slider_img' src={odessaStreet}  alt='odessa-street'/>
+          <img className='slider_img' src={castle} alt='odessa-castle'/>
         </div>
       
-        <button className='slider_btn-prev'><img src={pointer}></img></button>
-        <button className='slider_btn-next'><img src={pointer}></img></button>
+        <button className='slider_btn-prev'><img src={pointer} alt='pointer'></img></button>
+        <button className='slider_btn-next'><img src={pointer} alt='pointer'></img></button>
+        
 
         <div className='slider_wrapper'>
           <div className='slider_dot active-dot'></div>

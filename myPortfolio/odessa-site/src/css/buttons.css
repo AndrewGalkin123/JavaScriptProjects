@@ -68,7 +68,7 @@ ul li {
 .menu-item {
     font-family: Arial, sans-serif;
     color: white;
-    margin: 0 0 15px -20px;
+    margin: 0 0 15px ;
     font-size: 20px;
     text-decoration: none;
     transition-duration: .25s;
