@@ -19,12 +19,12 @@ class History extends React.Component {
   }
 
   photoUpdate = () => {
-    const photoItemElement = document.querySelector("#photos_index .photo_item");
+    const photoItemElement = document.querySelector("#history_photos_index .photo_item");
     if (photoItemElement) {
       const photoItemHeight = photoItemElement.clientHeight;
       if (photoItemHeight !== this.state.photoItemHeight) {
         this.setState({ photoItemHeight }, () => {
-          document.querySelector("#photos_index").style.height = (photoItemHeight * 2 + 38) + "px";
+          document.querySelector("#history_photos_index").style.height = (photoItemHeight * 2 + 38) + "px";
         });
       }
     }
@@ -44,7 +44,7 @@ class History extends React.Component {
 
         <div className="content" style={{ maxWidth: "1290px" }}>
           <div
-            id="photos_index"
+            id="history_photos_index"
             style={{
               position: "relative",
               textAlign: "center",
@@ -58,7 +58,7 @@ class History extends React.Component {
               <a className="photo_item">
                 <img className="picture" src={descentCoast} alt="descent coast"></img>
                 <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
+                <span className="photo_item_title">Одесса, Черноморск</span>
               </a>
               <a className="photo_item">
                 <img className="picture" src={descentCoast} alt="descent coast"></img>
@@ -97,6 +97,11 @@ class History extends React.Component {
               </a>
             </div>
           </div>
+
+          <p style={{textAlign : "center"}}>
+            <a href='' className='photos_link'>Смотреть все фото (10)</a>
+          </p>
+
         </div>
       </div>
     );

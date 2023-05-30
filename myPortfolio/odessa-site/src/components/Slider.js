@@ -4,6 +4,7 @@ import odessaStreet from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/file
 import castle from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/977d3913-5162-4759-b4ed-e3098b40cf71.jpg'
 import 'jquery'
 import odessa from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/odessa-2577800.jpg'
+import pointer from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/pointer.png'
 
 
 class Slider extends React.Component {
@@ -69,9 +70,9 @@ class Slider extends React.Component {
           <img className='slider_img' src={odessaStreet} />
           <img className='slider_img' src={castle} />
         </div>
-
-        <button className='slider_btn-prev'>Prev</button>
-        <button className='slider_btn-next'>Next</button>
+      
+        <button className='slider_btn-prev'><img src={pointer}></img></button>
+        <button className='slider_btn-next'><img src={pointer}></img></button>
 
         <div className='slider_wrapper'>
           <div className='slider_dot active-dot'></div>

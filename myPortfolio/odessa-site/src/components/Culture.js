@@ -1,60 +1,110 @@
 import React from "react";
+import odessaFerrisWheel from "D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/historyImages/odessa-ferris-wheel.jpg";
 
-class Culture extends React.Component{
-    render(){
+class Culture extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            photoItemHeight: 0
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.photoUpdate);
+        this.photoUpdate();
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.photoUpdate);
+    }
+
+    photoUpdate = () => {
+        const photoItemElement = document.querySelector("#culture_photos_index .photo_item");
+        if (photoItemElement) {
+            const photoItemHeight = photoItemElement.clientHeight;
+            if (photoItemHeight !== this.state.photoItemHeight) {
+                this.setState({ photoItemHeight }, () => {
+                    document.querySelector("#culture_photos_index").style.height = (photoItemHeight * 2 + 38) + "px";
+                });
+            }
+        }
+    };
+
+    render() {
         return (
-            <div class="culture">
-                <hr className="line"></hr>
-                <p>Культура</p>
-                <div class="photo-container">
-                    <div class="first-row">
-                        <div class="image-container">
-                            <img
-                                src="https://st.depositphotos.com/1057668/4156/i/600/depositphotos_41568091-stock-photo-seljalandfoss-waterfall.jpg">
-                            </img><div class="block"></div>
-                        </div>
-                        <div class="image-container">
-                            <img
-                                src="https://st4.depositphotos.com/14883968/21323/i/600/depositphotos_213239274-stock-photo-landscape-beautiful-piva-lake-mountains.jpg">
-                            </img><div class="block"></div>
-                        </div>
-                        <div class="image-container">
-                            <img
-                                src="https://st2.depositphotos.com/1591133/8812/i/600/depositphotos_88120646-stock-photo-idyllic-summer-landscape-with-clear.jpg">
-                            </img><div class="block"></div>
-                        </div>
-                        <div class="image-container">
-                            <img
-                                src="https://st3.depositphotos.com/4829791/32368/i/600/depositphotos_323688794-stock-photo-felicite-island-seychelles.jpg">
-                            </img><div class="block"></div>
+            <div>
+                <br></br>
+                <div className="title">
+                    <hr />
+                    <span>Культура</span>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+
+                <div className="content" style={{ maxWidth: "1290px" }}>
+                    <div
+                        id="culture_photos_index"
+                        style={{
+                            position: "relative",
+                            textAlign: "center",
+                            letterSpacing: "16px",
+                            marginBottom: "20px",
+                            overflow: "hidden",
+                            height: "400"
+                        }}
+                    >
+                        <div style={{ position: "absolute", left: "-20px", top: "0", right: "-20px" }}>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Одесса, Черноморск</span>
+                            </a>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Остров Парос, Греция</span>
+                            </a>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Остров Парос, Греция</span>
+                            </a>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Остров Парос, Греция</span>
+                            </a>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Остров Парос, Греция</span>
+                            </a>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Остров Парос, Греция</span>
+                            </a>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Остров Парос, Греция</span>
+                            </a>
+                            <a className="photo_item">
+                                <img className="picture" src={odessaFerrisWheel} alt="descent coast"></img>
+                                <span className="photo_block-item"></span>
+                                <span className="photo_item_title">Остров Парос, Греция</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="second-row">
-                        <div class="image-container">
-                            <img
-                                src="https://st.depositphotos.com/1000633/57261/i/600/depositphotos_572618664-stock-photo-panoramic-view-lake-moraine-banff.jpg">
-                            </img><div class="block"></div>
-                        </div>
-                        <div class="image-container">
-                            <img
-                                src="https://st2.depositphotos.com/8193160/10952/i/600/depositphotos_109529618-stock-photo-reynisdrangar-rocks-sunrise.jpg">
-                            </img><div class="block"></div>
-                        </div>
-                        <div class="image-container">
-                            <img
-                                src="https://st.depositphotos.com/1035350/1831/i/600/depositphotos_18311415-stock-photo-ginkaku-ji-temple-in-kyoto.jpg">
-                            </img><div class="block"></div>
-                        </div>
-                        <div class="image-container">
-                            <img
-                                src="https://st.depositphotos.com/3279155/5136/i/600/depositphotos_51366907-stock-photo-tsminda-sameba-church-near-kazbegi.jpg">
-                            </img><div class="block"></div>
-                        </div>
-                    </div>
-                    <button class="photos-button">Смотреть все фото (10)</button>
+
+                    <p style={{ textAlign: "center" }}>
+                        <a href='' className='photos_link'>Смотреть все фото (10)</a>
+                    </p>
+
                 </div>
             </div>
-        )
+        );
     }
 }
 
