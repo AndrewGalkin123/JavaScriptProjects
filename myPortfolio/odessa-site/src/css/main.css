@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
+
+
 * {
     margin: 0;
     padding: 0;
-
+    
 }
 
 .slider {
@@ -237,8 +240,12 @@
     }
 }
 
-
-
+.box{
+   
+    font-family: 'Poppins' , sans-serif;
+    box-shadow: -1px 0 10px #000000;
+    text-align: center;
+}
 
 .odessa {
     position: relative;
@@ -270,14 +277,6 @@
     text-align: center;
 
 
-}
-
-@media screen and (max-width: 990px) {
-    .odessa img {
-        width: 150%;
-        height: 400px;
-        overflow: hidden;
-    }
 }
 
 svg {

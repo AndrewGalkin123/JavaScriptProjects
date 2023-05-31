@@ -6,7 +6,7 @@ import Slider from './components/Slider'
 import History from './components/History'
 import Culture from "./components/Culture";
 import Footer from './components/Footer'
-
+import PhotoGallery from "./components/PhotoGallery";
 
 class App extends React.Component {
   render() {
@@ -17,10 +17,10 @@ class App extends React.Component {
           <Slider></Slider>
           <History></History>
           <Culture></Culture>
-
-          <Footer/>
+          <PhotoGallery></PhotoGallery>
+          <Footer />
         </main>
-        
+
       </div>
 
     );
