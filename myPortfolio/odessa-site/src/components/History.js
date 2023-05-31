@@ -1,111 +1,57 @@
-import React from 'react';
-import descentCoast from "D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/historyImages/descent-coast.jpg";
+import React from "react";
+import pavelCathedral from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/pavelCathedral.jpg'
+import vorontsovLighthouse from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/vorontsov-lighthouse.jpg'
 
 class History extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      photoItemHeight: 0
-    }
-  }
+    render() {
+        return (
+            <div>
+                <br></br>
+                <div className="title">
+                    <hr />
+                    <span>История</span>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div className="content" style={{ maxWidth: "1500px", display: "flex", flexWrap: "wrap", justifyContent: "space-around", padding: "0 15px" }}>
+                    <a href="" className="box" style={{ margin: "15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
+                        <img src={pavelCathedral} style={{ width: "100%", height: "auto" }} />
+                        <h2>Кафедральный Собор Св. Павла</h2>
+                        <p>Величие веры и архитектурное великолепие.
+                            Красивый фасад с колоннами и портиками, внутри – потрясающие фрески и орнаменты. Место поклонения и религиозных мероприятий, привлекающее туристов в Одессу.
 
-  componentDidMount() {
-    window.addEventListener("resize", this.photoUpdate);
-    this.photoUpdate();
-  }
+                        </p>
+                    </a>
+                    <a href="" className="box" style={{ margin: "15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
+                        <img src={pavelCathedral} style={{ width: "100%", height: "auto" }} />
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.photoUpdate);
-  }
+                        </p>
+                    </a>
+                    <a href="" className="box" style={{ margin: "15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
+                        <img src={vorontsovLighthouse} style={{ width: "100%", height: "auto"}} />
+                        <h2>Воронцовский маяк</h2>
+                        <p>Исторический символ и морская достопримечательность. Этот величественный маяк, построенный в 19 веке, предоставляет незабываемый вид на Чёрное море.
+                             Он служит ориентиром для мореплавателей и вдохновляет посетителей своей красотой и романтикой морской атмосферы.
 
-  photoUpdate = () => {
-    const photoItemElement = document.querySelector("#history_photos_index .photo_item");
-    if (photoItemElement) {
-      const photoItemHeight = photoItemElement.clientHeight;
-      if (photoItemHeight !== this.state.photoItemHeight) {
-        this.setState({ photoItemHeight }, () => {
-          document.querySelector("#history_photos_index").style.height = (photoItemHeight * 2 + 38) + "px";
-        });
-      }
-    }
-  };
+                        </p>
+                    </a>
+                    <a href="" className="box" style={{ margin: "15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
+                        <img src={pavelCathedral} style={{ width: "100%", height: "auto"}} />
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-  render() {
-    return (
-      <div>
-        <br></br>
-        <div className="title">
-          <hr />
-          <span>История</span>
-        </div>
-        <br></br>
-        <br></br>
-        <br></br>
-
-        <div className="content" style={{ maxWidth: "1290px" }}>
-          <div
-            id="history_photos_index"
-            style={{
-              position: "relative",
-              textAlign: "center",
-              letterSpacing: "16px",
-              marginBottom: "20px",
-              overflow: "hidden",
-              height: "0"
-            }}
-          >
-            <div style={{ position: "absolute", left: "-20px", top: "0", right: "-20px" }}>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Одесса, Черноморск</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
+                        </p>
+                    </a>
+                </div>
             </div>
-          </div>
-
-          <p style={{textAlign : "center"}}>
-            <a href='' className='photos_link'>Смотреть все фото (10)</a>
-          </p>
-
-        </div>
-      </div>
-    );
-  }
+        )
+    }
 }
-export default History;
 
+
+export default History;

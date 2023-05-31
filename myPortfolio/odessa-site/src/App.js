@@ -17,7 +17,7 @@ class App extends React.Component {
           <Slider></Slider>
           <History></History>
           <Culture></Culture>
-          <PhotoGallery></PhotoGallery>
+          <PhotoGallery/>
           <Footer />
         </main>
 
