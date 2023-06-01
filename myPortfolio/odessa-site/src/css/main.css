@@ -248,11 +248,12 @@
 }
 
 
-  
-.odessa {
+.odessa { 
+    display: block;
     position: relative;
-    top: 350px;
+    top: 50px;
 }
+
 
 .odessa hr {
     position: absolute;
