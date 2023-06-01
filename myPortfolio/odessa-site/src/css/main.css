@@ -248,43 +248,10 @@
 }
 
 
-.odessa { 
-    display: block;
-    position: relative;
-    top: 50px;
-}
 
-
-.odessa hr {
-    position: absolute;
-    width: 100%;
-}
-
-
-.odessa p {
-    position: absolute;
-    padding: 20px;
-    font-size: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-}
-
-.odessa img {
-    position: relative;
-    top: 400px;
-    height: 700px;
-    width: 1300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-
-}
 
 svg {
     position: absolute;
-    top: 3.2rem;
     left: 0;
     height: 100%;
     width: 100%;
