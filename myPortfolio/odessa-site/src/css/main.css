@@ -256,17 +256,26 @@ svg {
     height: 100%;
     width: 100%;
     z-index: 5;
-
-}
-
-.description {
+  }
+  
+  .description {
     position: absolute;
     padding: 1.25rem;
     box-sizing: border-box;
-    width: 18.75rem;
+    width: 25%;
+    max-width: 18.75rem;
     height: 25rem;
-    box-shadow: 0 0 2rem .625rem;
-    left: 3.125rem;
+    box-shadow: 0 0 2rem 0.625rem;
+    left: 4%;
     bottom: calc(50% - 12.5rem);
     z-index: 3;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .description {
+      width: 90%;
+      max-width: 20rem;
+      height: 15rem;
+      bottom: calc(50% - 7.5rem);
+    }
+  }
