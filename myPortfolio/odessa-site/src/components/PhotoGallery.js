@@ -1,34 +1,10 @@
 import React from 'react';
 import descentCoast from "D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/historyImages/descent-coast.jpg";
+import vorontsovLighthouse from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/lighthouse.jpg'
+import sailorWife from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/sailorWife.jpg'
+import opera from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/opera.jpg'
 
 class PhotoGallery extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      photoItemHeight: 0
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.photoUpdate);
-    this.photoUpdate();
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.photoUpdate);
-  }
-
-  photoUpdate = () => {
-    const photoItemElement = document.querySelector("#history_photos_index .photo_item");
-    if (photoItemElement) {
-      const photoItemHeight = photoItemElement.clientHeight;
-      if (photoItemHeight !== this.state.photoItemHeight) {
-        this.setState({ photoItemHeight }, () => {
-          document.querySelector("#history_photos_index").style.height = (photoItemHeight * 2 + 38) + "px";
-        });
-      }
-    }
-  };
 
   render() {
     return (
@@ -43,68 +19,49 @@ class PhotoGallery extends React.Component {
         <br></br>
 
         <div className="content" style={{ maxWidth: "1290px" }}>
-          <div
-            id="history_photos_index"
-            style={{
-              position: "relative",
-              textAlign: "center",
-              letterSpacing: "16px",
-              marginBottom: "20px",
-              overflow: "hidden",
-              height: "0"
-            }}
-          >
-            <div style={{ position: "absolute", left: "-20px", top: "0", right: "-20px" }}>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Одесса, Черноморск</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-              <a className="photo_item">
-                <img className="picture" src={descentCoast} alt="descent coast"></img>
-                <span className="photo_block-item"></span>
-                <span className="photo_item_title">Остров Парос, Греция</span>
-              </a>
-            </div>
+          <div className="grid-wrap">
+            <ul>
+              <li><a className="gallery-item">
+                <img src={descentCoast} alt="descent coast"></img>
+                <span className="gallery-item-hover">Одесса</span>
+              </a></li>
+              <li><a className="gallery-item">
+                <img src={vorontsovLighthouse} alt="descent coast"></img>
+                <span className="gallery-item-hover">Одесса</span>
+              </a></li>
+              <li><a className="gallery-item">
+                <img src={descentCoast} alt="descent coast"></img>
+                <span className="gallery-item-hover">Одесса</span>
+              </a></li>
+              <li><a className="gallery-item">
+                <img src={opera} alt="descent coast"></img>
+                <span className="gallery-item-hover">Одесса</span>
+              </a></li>
+              <li><a className="gallery-item">
+                <img src={vorontsovLighthouse} alt="descent coast"></img>
+                <span className="gallery-item-hover">Одесса</span>
+              </a></li>
+              <li><a className="gallery-item">
+                <img src={sailorWife} alt="descent coast"></img>
+                <span className="gallery-item-hover">Одесса</span>
+              </a></li>
+              <li><a className="gallery-item">
+                <img src={opera} alt="descent coast"></img>
+                <span className="gallery-item-hover">Одесса</span>
+              </a></li>
+            </ul>
           </div>
-
-          <p style={{textAlign : "center"}}>
+          <p style={{ textAlign: "center" }}>
             <a href='' className='photos_link'>Смотреть все фото (10)</a>
           </p>
-
         </div>
       </div>
     );
   }
 }
 export default PhotoGallery;
+
+/* <a className="gallery-item">
+<img src={descentCoast} alt="descent coast"></img>
+<span className="gallery-item-hover">Одесса</span>
+</a> */
