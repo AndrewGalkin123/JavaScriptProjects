@@ -9,7 +9,7 @@ header {
     background-position: bottom;
     background-size: cover;
     color: #fff;
-    height: 80px;
+    height: 60px;
     width: 100%;
     display: block;
     z-index: 9;
@@ -33,8 +33,8 @@ header::before {
     top: 50%;
     left: 40px;
     transform: translate(-50%, -50%);
-    height: 130px;
-    width: 140px;
+    height: 120px;
+    width: 130px;
 }
 
 nav {
@@ -55,10 +55,11 @@ nav ul li {
 .navigation-button {
     position: absolute;
     bottom: 0;
-    height: 80px;
+    height: 60px;
     width: 150px;
     background-color: rgba(28, 28, 28, 0);
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 500;
     color: #fff;
     transition: all 0.3s ease;
     overflow: hidden;

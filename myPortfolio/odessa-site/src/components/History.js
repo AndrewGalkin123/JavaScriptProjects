@@ -5,6 +5,7 @@ import sailorWife from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/
 import opera from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/opera.jpg'
 
 class History extends React.Component {
+   
     render() {
         return (
             <div>
@@ -28,8 +29,8 @@ class History extends React.Component {
                     <a href="" className="box" style={{ margin: "15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
                         <img src={sailorWife} style={{ width: "100%", height: "470px", objectFit: "cover", objectPosition: "top" }} />
                         <h2>Памятник жене моряка</h2>
-                        <p>Трогательная история любви, запечатленная в бронзе. 
-                            Эта великолепная скульптура символизирует преданность и силу женщины, ожидающей возвращения моряка. 
+                        <p>Трогательная история любви, запечатленная в бронзе.
+                            Эта великолепная скульптура символизирует преданность и силу женщины, ожидающей возвращения моряка.
                             Загляните в глаза этой статуи и почувствуйте магию и эмоциональную привязанность, которые она передает.
 
                         </p>

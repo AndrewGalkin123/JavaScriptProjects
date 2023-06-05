@@ -1,5 +1,4 @@
 import React from "react";
-import Excursion from './components/History'
 import OdessaMap from './components/OdessaMap'
 import Header from './components/Header'
 import Slider from './components/Slider'
