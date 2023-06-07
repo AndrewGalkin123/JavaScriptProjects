@@ -9,7 +9,9 @@ import descentCoast from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/file
 class PhotoGallery extends React.Component {
   render() {
     return (
-      <div style={{display: "flex" , flexDirection: 'column', alignItems: "center"}}>
+      
+      <div style={{ justifyContent: 'center'}}>
+        <div>
         <br />
         <div className="title">
           <hr />
@@ -92,6 +94,10 @@ class PhotoGallery extends React.Component {
             </div>
           </div>
         </div>
+        <p style={{ textAlign: "center" }}>
+          <a href='' className='photos_link'>Смотреть все фото (10)</a>
+        </p>
+      </div>
       </div>
     );
   }
