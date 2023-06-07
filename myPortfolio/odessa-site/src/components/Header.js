@@ -36,17 +36,17 @@ class Header extends React.Component {
         <nav>
           <ul>
             <li>
-              <a className="navigation-link" onClick={() => window.location.href = "index.html"}>
+              <a className="navigation-link" href="#history">
                 {translations.history}
               </a>
             </li>
             <li>
-              <a className="navigation-link" onClick={() => window.location.href = "index.html"}>
+              <a className="navigation-link" href="#culture">
                 {translations.culture}
               </a>
             </li>
             <li>
-              <a className="navigation-link" onClick={() => window.location.href = "index.html"}>
+              <a className="navigation-link" href="#photoGallery">
                 {translations.photoGallery}
               </a>
             </li>

@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     position: fixed;
     background: url(https://otkritkis.com/wp-content/uploads/2022/07/gu69o.gif);
@@ -64,6 +68,7 @@ nav ul li {
     color: #fff;
     overflow: hidden;
     border-bottom: 4px solid transparent;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;

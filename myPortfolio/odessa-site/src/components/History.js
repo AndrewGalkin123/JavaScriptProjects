@@ -8,9 +8,9 @@ class History extends React.Component {
    
     render() {
         return (
-            <div>
+            <div id="history">
                 <br></br>
-                <div className="title">
+                <div className="title" >
                     <hr />
                     <span>История</span>
                 </div>

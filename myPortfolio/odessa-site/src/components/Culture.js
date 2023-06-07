@@ -32,7 +32,7 @@ class Culture extends React.Component {
 
     render() {
         return (
-            <div>
+            <div  id="culture">
                 <br></br>
                 <div className="title">
                     <hr />

@@ -10,7 +10,7 @@ class PhotoGallery extends React.Component {
   render() {
     return (
       
-      <div style={{ justifyContent: 'center'}}>
+      <div style={{justifyContent: 'center'}} id="photoGallery">
         <div>
         <br />
         <div className="title">
