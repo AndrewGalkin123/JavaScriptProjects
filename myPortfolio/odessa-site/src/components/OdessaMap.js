@@ -28,13 +28,13 @@ class OdessaMap extends React.Component {
                     <br />
                     <div
                         className="content"
-                        style={{ maxWidth: "1300px", textAlign: "center" }}
+                        style={{ maxWidth: "1290px", textAlign: "center" }}
                     >
                         <img
                             id="odessaMap"
                             src={odessaPhoto}
                             alt="odessa-photo"
-                            style={{ maxWidth: "100%" }}
+                            style={{ maxWidth: "100%" ,width: "1290px"}}
                         />
                         <svg viewBox="0 0 1255 880" style={{ opacity: "0" }}>
                             <path

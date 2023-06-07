@@ -81,24 +81,25 @@ nav ul li {
 
 .translator-button {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     top: 50%;
-    transform: translateY(-50%);
     right: 80px;
+    transform: translateY(-50%);
     height: 40px;
     width: 40px;
     color: #fff;
-    font-size: 18px;
-    border-radius: 3px;
-}
-
-.translator-button:hover {
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+  }
+  
+  .translator-button:hover {
     background-color: #38b434;
+  }
+  
 
-}
 
-.translator-button p{
-    margin: 0;
-}
+

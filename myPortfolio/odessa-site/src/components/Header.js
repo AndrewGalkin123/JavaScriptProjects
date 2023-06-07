@@ -3,6 +3,7 @@ import BurgerMenu from './BurgerMenu';
 import logo from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/logo.png';
 import ukTranslations from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/uk.json';
 import ruTranslations from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/ru.json';
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -51,9 +52,9 @@ class Header extends React.Component {
             </li>
           </ul>
         </nav>
-        <a className="translator-button" onClick={this.handleLanguageToggle}>
-          <p>{currentLanguage === 'ru' ? 'UK' : 'RU'}</p>
-        </a>
+        <button onClick={this.handleLanguageToggle} className="translator-button">
+          {currentLanguage === 'ru' ? 'UK' : 'RU'}
+        </button>
         <BurgerMenu />
       </header>
     );
@@ -61,3 +62,4 @@ class Header extends React.Component {
 }
 
 export default Header;
+
