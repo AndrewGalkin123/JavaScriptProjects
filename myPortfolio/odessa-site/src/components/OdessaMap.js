@@ -36,6 +36,7 @@ class OdessaMap extends React.Component {
                             alt="odessa-photo"
                             style={{ maxWidth: "100%" ,width: "1290px"}}
                         />
+                 
                         <svg viewBox="0 0 1255 880" style={{ opacity: "0" }}>
                             <path
 
