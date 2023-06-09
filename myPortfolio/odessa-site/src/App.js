@@ -18,9 +18,9 @@ class App extends React.Component {
           <Culture></Culture>
           <OdessaMap/>
           <PhotoGallery/>
-          <Footer />
+          
         </main>
-
+        <Footer />
       </div>
 
     );
