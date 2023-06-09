@@ -34,11 +34,12 @@ header::before {
 
 #main-logo {
     position: absolute;
-    top: 50%;
-    left: 40px;
-    transform: translate(-50%, -50%);
-    height: 110px;
-    width: 120;
+    top: 39%;
+    left: 80px;
+    transform: translate(-50%, -39%);
+    height: 120px;
+   
+    width: 180px;
 }
 
 nav {
