@@ -26,7 +26,7 @@ ul li {
     width: 35px;
     height: 5px;
     background-color: #fff;
-    transition-duration: .1s;
+    transition-duration: .2s;
 
 }
 
@@ -62,7 +62,7 @@ ul li {
     margin: 0;
     list-style: none;
     background-color: rgba(37, 83, 125, 0.9);
-    transition-duration: .25s;
+    transition-duration: .3s;
 }
 
 .menu-item {
@@ -72,7 +72,7 @@ ul li {
     font-size: 20px;
     text-decoration: none;
     transition-duration: .25s;
-    border: 4px solid transparent;
+    border-bottom: 4px solid transparent;
     box-sizing: border-box;
     width: 200px;
     text-align: center;

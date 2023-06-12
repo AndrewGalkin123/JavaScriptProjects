@@ -34,11 +34,10 @@ header::before {
 
 #main-logo {
     position: absolute;
-    top: 39%;
+    top: 38%;
     left: 80px;
-    transform: translate(-50%, -39%);
+    transform: translate(-50%, -38%);
     height: 120px;
-   
     width: 180px;
 }
 

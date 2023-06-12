@@ -1,16 +1,15 @@
 import React from 'react';
 import BurgerMenu from './BurgerMenu';
-import logo from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/logo.png';
+// import logo from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files/img/logo.png';
 
 
 class Header extends React.Component {
-
   render() {
 
 
     return (
       <header>
-        <img id="main-logo" src={logo} alt="logo" />
+        {/* <img id="main-logo" src={logo} alt="logo" /> */}
         <nav>
           <ul>
             <li>

@@ -3,17 +3,6 @@ import odessaPhoto from 'D:/JavaScriptProjects/myPortfolio/odessa-site/src/files
 import $ from 'jquery';
 
 class OdessaMap extends React.Component {
-    componentDidMount() {
-        $(".point").hover(
-            function () {
-                $(".description").html($(this).attr("description-data"));
-                $(".description").fadeIn();
-            },
-            function () {
-                $(".description").fadeOut();
-            }
-        );
-    }
     render() {
         return (
             <div style={{ justifyContent: "center" }}>
