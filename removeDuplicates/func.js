@@ -1,10 +1,13 @@
-var merge = function(nums1, m, nums2, n) {
-    let count = 0;
-    for(let i = m;i < m+n;i++){
-        nums1[i] = nums2[count]
-        count++
+var checkIfExist = function(arr) {
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < arr.length; j++){
+           if(arr[i] === arr[j] * 2  && i !== j){
+               return true
+           }
+        }
     }
-    nums1.sort(function (a, b) {
-        return a - b;
-    });        
+    
+    return false
 };
+
+console.log(checkIfExist([0,0]))
