@@ -1,15 +1,9 @@
-var moveZeroes = function(nums) {
-    
-    nums.sort(function(a, b) {
-        if (a === 0 && b !== 0) {
-          return 1; // Перемещаем нули в конец
-        } else if (a !== 0 && b === 0) {
-          return -1; // Остальные числа идут перед нулями
-        } else {
-          return 0; // Сохраняем порядок для равных чисел
+var removeElement = function(nums, val) {
+    for (let i = nums.length - 1; i >= 0; i--) {
+        if (nums[i] == val) {
+            nums.splice(i, 1); 
         }
-      });
-      return nums;
+    }
 };
 
 console.log(moveZeroes([0,1,0,3,12]))
