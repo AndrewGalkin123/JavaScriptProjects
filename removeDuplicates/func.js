@@ -1,9 +1,15 @@
-var removeElement = function(nums, val) {
-    for (let i = nums.length - 1; i >= 0; i--) {
-        if (nums[i] == val) {
-            nums.splice(i, 1); 
+var lengthOfLastWord = function (s) {
+    let count = 0
+    let r = s.trim()
+   
+    for(let i = r.length-1; i >= 0; i --){
+        if(r[i] == " "){
+            return count
         }
+        count++
     }
+    return count
 };
 
-console.log(moveZeroes([0,1,0,3,12]))
+s = " a"
+console.log(lengthOfLastWord(s))
