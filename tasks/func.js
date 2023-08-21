@@ -1,15 +1,21 @@
-var lengthOfLastWord = function (s) {
-    let count = 0
-    let r = s.trim()
-   
-    for(let i = r.length-1; i >= 0; i --){
-        if(r[i] == " "){
-            return count
-        }
-        count++
-    }
-    return count
-};
+let search = function(nums, target){
+     let left = 0 
+     let right = nums.length - 1
+     let mid
 
-s = " a"
-console.log(lengthOfLastWord(s))
+     while(left <= right){
+        mid = Math.floor((right-left)/2) + left
+
+        if(target === nums[mid]){
+            return mid
+        }else if(target < nums[mid]){
+            right = mid - 1
+        }else { 
+            left = mid + 1
+        }
+     }
+     return -1
+}
+
+let array = [1,4,6,7,12,25,62,100,112]
+console.log(search(array, 112))
