@@ -1,21 +1,13 @@
-let search = function(nums, target){
-     let left = 0 
-     let right = nums.length - 1
-     let mid
+var isPalindrome = function(s) {
+    s = s.replace(/[^a-zа-яё0-9]/gi, '').toLowerCase();
 
-     while(left <= right){
-        mid = Math.floor((right-left)/2) + left
+    const reverse = s.split('').reverse().join('');
 
-        if(target === nums[mid]){
-            return mid
-        }else if(target < nums[mid]){
-            right = mid - 1
-        }else { 
-            left = mid + 1
-        }
-     }
-     return -1
-}
+    if(reverse === s){
+        return true
+    }
+    return false
+};
 
-let array = [1,4,6,7,12,25,62,100,112]
-console.log(search(array, 112))
+let array = "Race Racer"
+console.log(isPalindrome(array))
