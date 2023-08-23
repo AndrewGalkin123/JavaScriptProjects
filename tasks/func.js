@@ -1,13 +1,12 @@
-var isPalindrome = function(s) {
-    s = s.replace(/[^a-zа-яё0-9]/gi, '').toLowerCase();
-
-    const reverse = s.split('').reverse().join('');
-
-    if(reverse === s){
-        return true
+var maxProfit = function(prices) {
+    max = 0
+    min = prices[0]
+    for(let i = 0; i < prices.length; i++){
+        min = Math.min(min, prices[i])
+        max = Math.max(max, prices[i] - min)
     }
-    return false
+    return max
 };
 
-let array = "Race Racer"
-console.log(isPalindrome(array))
+let array = [6,1,56,1,5,2,1]
+console.log(maxProfit(array))
