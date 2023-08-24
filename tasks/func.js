@@ -1,12 +1,10 @@
-var maxProfit = function(prices) {
-    max = 0
-    min = prices[0]
-    for(let i = 0; i < prices.length; i++){
-        min = Math.min(min, prices[i])
-        max = Math.max(max, prices[i] - min)
+function memoize(fn) {
+    let memo = new Map()
+    return function(...args) {
+        const key = Array.from(args).join("_")
+        if(memo.has(key)) return memo.get(key)
+        memo.set(key, fn(...args))
+        return memo.get(key)
     }
-    return max
-};
+}
 
-let array = [6,1,56,1,5,2,1]
-console.log(maxProfit(array))
