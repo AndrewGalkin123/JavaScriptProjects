@@ -8,3 +8,5 @@ function memoize(fn) {
     }
 }
 
+console.log(...args.map((el) => el * 2))
+
