@@ -1,6 +1,5 @@
-var findMin = function(nums) {
-  nums.sort(function (a, b) {
-       return a - b;
-   });
-   return nums[0]
+var createCounter = function(n) {
+  return function() {
+      return n++;
+  };
 };
