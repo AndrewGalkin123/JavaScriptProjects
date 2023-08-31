@@ -48,4 +48,9 @@ header {
 main {
     height: 2000px;
     background-color: black;
+    background-image: url(./bg.jpg);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat; 
+    
+    
 }
