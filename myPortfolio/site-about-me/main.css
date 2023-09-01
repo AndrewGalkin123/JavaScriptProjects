@@ -54,3 +54,10 @@ main {
     
     
 }
+
+.greetings { 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 65px;
+    font-weight: 1000;
+}
