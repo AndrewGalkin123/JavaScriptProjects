@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <link rel="shortcut icon" href="./panda.png" type="image/x-icon">
+
     <title>Andrew | Portfolio</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@1.3.0/dist/model-viewer.js"></script>
+
 </head>
 
 <body>
@@ -23,12 +26,20 @@
     </header>
     <main>
         <div class="about-me">
-            <p class="greetings">Hi, I am Andrew</p>
-            <p style="color: white; font-size: 30px; font-family: 'Roboto', sans-serif;font-weight: 300;">Frontend developer</p>
-            <div class="Computer3DObj"></div>
+            <div class="text-container">
+                <div class="text-line"></div> <!-- Линия слева от текста -->
+                <p class="greetings">Hi, I am Andrew</p>
+                <p class="job-title">Frontend developer</p>
+            </div>
+            <model-viewer src="./model/scene.gltf" alt="A 3D model" camera-controls
+                camera-orbit="145deg 100deg 3m 0"></model-viewer>
         </div>
-        <div class="skills">
 
+
+
+        <div class="skills" style="margin-top: 600px;">
+            <p class="title">Skills</p>
+            <hr>
         </div>
         <div class="education">
 
@@ -37,10 +48,26 @@
 
         </div>
     </main>
-    
-    <script src="three.js"></script>
-    <script src="GLTFLoader.js"></script>
-    <script type="module" src="main.js"></script>
+
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var windowHeight = $(window).height();
+                var scrollValue = $(window).scrollTop();
+                var skillsOffset = $('.skills').offset().top;
+
+                if (scrollValue + windowHeight > skillsOffset) {
+                    $('.skills').addClass('show');
+                }
+            });
+        });
+        
+    </script>
+
+
 
 </body>
 
