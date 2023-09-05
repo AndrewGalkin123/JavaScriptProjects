@@ -65,8 +65,8 @@ main {
 
 .text-container {
     align-items: center;
-    margin-right: 500px;
-    margin-top: 60px;
+    margin-right: 450px;
+    margin-top: 100px;
     margin-bottom: -30px;
 }
 
@@ -78,7 +78,7 @@ main {
     margin-bottom: -600px;
 }
 
-.greetings{
+.greetings {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 65px;
@@ -98,21 +98,28 @@ main {
     width: 500px;
 }
 
-
+.text-container .info-about-me {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 15px;
+    max-width: 300px;
+    text-align: left;
+}
 
 
 
 .skills {
     text-align: center;
     margin-top: 600px;
-    opacity: 0; /* Начальная непрозрачность текста */
-    transform: translateY(20px); /* Начальное смещение текста вниз */
-    transition: opacity 1.3s ease-in-out, transform 1.3s ease-in-out; /* Анимация для плавного появления */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.3s ease-in-out, transform 1.3s ease-in-out;
 }
 
 .skills.show {
-    opacity: 1; /* Задаем полную прозрачность при появлении */
-    transform: translateY(0); /* Возвращаем текст в исходное положение */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -124,9 +131,80 @@ main {
 
 }
 
-.skills .title { 
+.skills .title {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 65px;
     font-weight: 1000;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.card {
+    margin: 20px;
+    
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    perspective: 600px;
+    position: relative;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    /* Добавьте это свойство */
+}
+
+.front img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    
+}
+
+.front {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.back {
+    border-radius: 25px;
+    background-color: rgb(161, 161, 161);
+    transform-origin: center;
+    z-index: 1;
+    transform: rotateY(180deg) translateZ(-1px);
+    /* Используйте translateZ для .back */
+}
+
+.back-content {
+    color: #333333;
+}
+
+.back-content span {
+    display: block;
+    font-size: 20px;
+}
+
+.card:hover>.front {
+    transform: rotateY(-180deg) translateZ(1px);
+}
+
+.card:hover>.back {
+    transform: rotateY(0deg) translateZ(0);
 }
