@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 
 * {
     margin: 0;
@@ -57,18 +58,36 @@ main {
 
 .about-me {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: right;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+}
+
+.main-associations {
+    display: inline-block;
+    
+}
+
+.panda {
+    height: 500px;
+    width: auto;
+
+}
+
+.nickname {
+    font-family: 'Monofett', monospace;
     text-align: center;
+    font-size: 76px;
+    color: #ffffff;
 }
 
 .text-container {
-    align-items: center;
-    margin-right: 450px;
-    margin-top: 100px;
-    margin-bottom: -30px;
+    margin-left: 220px;
 }
+
+
 
 .text-line {
     width: 6px;
@@ -90,21 +109,26 @@ main {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    float: left
+    float: left;
+    margin-top: 20px;
+
 }
 
 .about-me model-viewer {
-    height: 500px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
+
+    margin-left: 300px;
 }
 
 .text-container .info-about-me {
-    position: absolute;
+
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     max-width: 300px;
     text-align: left;
+    margin-top: 20px;
 }
 
 
@@ -143,12 +167,12 @@ main {
     flex-direction: row;
     justify-content: center;
     margin-top: 30px;
-    
+
 }
 
 .card {
     margin: 20px;
-    
+
     cursor: pointer;
     width: 300px;
     height: 300px;
@@ -162,7 +186,7 @@ main {
     height: 100%;
     backface-visibility: hidden;
     position: absolute;
-    transition: transform .6s linear;
+    transition: transform .3s linear;
     top: 0;
     left: 0;
     transform-style: preserve-3d;
@@ -175,7 +199,7 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: 25px;
-    
+
 }
 
 .front {
@@ -185,7 +209,7 @@ main {
 
 .back {
     border-radius: 25px;
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(47, 47, 47);
     transform-origin: center;
     z-index: 1;
     transform: rotateY(180deg) translateZ(-1px);
@@ -193,7 +217,7 @@ main {
 }
 
 .back-content {
-    color: #333333;
+    color: #ffffff;
 }
 
 .back-content span {
@@ -208,3 +232,4 @@ main {
 .card:hover>.back {
     transform: rotateY(0deg) translateZ(0);
 }
+
