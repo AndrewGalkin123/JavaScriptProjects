@@ -16,6 +16,15 @@ header {
     z-index: 5;
 }
 
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 65px;
+    font-weight: 1000;
+   text-align: center;
+}
+
+
 .logo {
     height: 100%;
 }
@@ -23,7 +32,8 @@ header {
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Добавляем это свойство */
+    justify-content: flex-end;
+    /* Добавляем это свойство */
     width: 100%;
     margin-right: 40px;
 }
@@ -71,7 +81,7 @@ main {
 
 .main-associations {
     display: inline-block;
-    
+
 }
 
 .panda {
@@ -152,19 +162,13 @@ main {
 
 
 
-.skills hr {
+.main-hr  {
     height: 4px;
     background-color: purple;
     border: none;
 
 }
 
-.skills .title {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 65px;
-    font-weight: 1000;
-}
 
 .cards {
     display: flex;
@@ -240,3 +244,107 @@ main {
     transform: rotateY(0deg) translateZ(0);
 }
 
+
+.work-experience { 
+   margin-top: 300px;
+}
+
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.post-item {
+    padding: 15px;
+    cursor: pointer;
+   
+}
+
+.post-item * {
+    transition: .3s linear;
+}
+
+.item-content {
+    border-radius: 8px;
+    background: #3b3941;
+    padding: 40px;
+}
+
+
+.item-body {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.item-body h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition-delay: .05s;
+}
+
+.item-body p {
+    transition-delay: .1s;
+}
+
+.item-footer {
+    padding-top: 15px;
+}
+
+.link {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    padding-right: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: .125rem;
+    margin: auto;
+    background: purple;
+    transform: scaleX(.2);
+    transform-origin: left center;
+    z-index: 0;
+    transition: .6s cubic-bezier(.6, .01, 0, 1);
+}
+
+.link span {
+    display: inline-block;
+    position: relative;
+    transform: translateX(-200%);
+    transition: .6s cubic-bezier(.6, .01, 0, 1);
+}
+
+.post-item:hover .link span {
+    transform: translateX(0%);
+}
+
+.post-item:hover .link:before {
+    transform-origin: right center;
+}
+
+@media (min-width: 768px) {
+    .post-item {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .post-item {
+        flex-basis: 33.333333333%;
+    }
+}
