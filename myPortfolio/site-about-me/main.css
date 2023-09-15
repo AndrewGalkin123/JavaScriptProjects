@@ -10,9 +10,10 @@ header {
     background-color: rgb(9, 17, 62);
     height: 70px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
 .logo {
@@ -20,9 +21,11 @@ header {
 }
 
 .navigation {
-    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* Добавляем это свойство */
+    width: 100%;
+    margin-right: 40px;
 }
 
 .navigation ul {
@@ -52,7 +55,8 @@ main {
     background-image: url(./bg.jpg);
     background-size: 100% 1000px;
     background-repeat: no-repeat;
-
+    position: relative;
+    top: 70px;
 
 }
 
@@ -208,6 +212,8 @@ main {
 }
 
 .back {
+    display: flex;
+    justify-content: center;
     border-radius: 25px;
     background-color: rgb(47, 47, 47);
     transform-origin: center;
@@ -224,6 +230,7 @@ main {
     display: block;
     font-size: 20px;
 }
+
 
 .card:hover>.front {
     transform: rotateY(-180deg) translateZ(1px);
