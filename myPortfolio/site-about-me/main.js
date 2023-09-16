@@ -1,12 +1,13 @@
+
 function scrollToCenter(element) {
     const elementRect = element.getBoundingClientRect();
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     window.scrollTo({
-      behavior: 'smooth',
-      top: elementRect.top + scrollTop - (window.innerHeight / 2) + (elementRect.height / 2),
+        behavior: 'smooth',
+        top: elementRect.top + scrollTop - (window.innerHeight / 2) + (elementRect.height / 2),
     });
-  }
+}
 
 // Получаем ссылки на элементы списка по их id
 const aboutMeLink = document.getElementById('about-me-link');
@@ -36,3 +37,12 @@ educationLink.addEventListener('click', () => {
 coursesLink.addEventListener('click', () => {
     scrollToCenter(coursesBlock);
 });
+
+const workExperience = document.querySelector(".work-experience")
+const courses = document.querySelector(".courses")
+
+const blocks = [workExperience, courses]
+VanillaTilt.init(blocks, {
+    reverse: true,
+    max: 5
+})

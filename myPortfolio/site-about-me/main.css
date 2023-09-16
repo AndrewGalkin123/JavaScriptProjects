@@ -21,7 +21,7 @@ header {
     color: white;
     font-size: 65px;
     font-weight: 1000;
-   text-align: center;
+    text-align: center;
 }
 
 
@@ -162,7 +162,7 @@ main {
 
 
 
-.main-hr  {
+.main-hr {
     height: 4px;
     background-color: purple;
     border: none;
@@ -244,35 +244,52 @@ main {
     transform: rotateY(0deg) translateZ(0);
 }
 
-
-.work-experience { 
-   margin-top: 300px;
-}
-
-.post-wrap {
-    max-width: 1120px;
-    margin: 0 auto;
+.wrapper { 
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
 }
+
+.work-experience, .courses {
+    margin-top: 300px;
+    width: 45%;
+  
+}
+
 
 .post-item {
-    padding: 15px;
     cursor: pointer;
-   
+  
+    border-radius: 8px;
+    transition: 0.2s all ease-in;
+    height: 460px;
 }
+
+
 
 .post-item * {
     transition: .3s linear;
+    text-decoration: none;
+    
 }
 
 .item-content {
+    -moz-box-shadow: 0 0 10px #ffffff;
+    -webkit-box-shadow: 0 0 10px #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     border-radius: 8px;
     background: #3b3941;
     padding: 40px;
+    height: 100%;
 }
 
+.item-content:hover {
+    -moz-box-shadow: 0 0 17px #ffffff;
+    -webkit-box-shadow: 0 0 17px #ffffff;
+    box-shadow: 0 0 17px #ffffff;
+}
 
 .item-body {
     color: #ffffff;
@@ -287,6 +304,7 @@ main {
 
 .item-body p {
     transition-delay: .1s;
+    font-size: 15px;
 }
 
 .item-footer {
