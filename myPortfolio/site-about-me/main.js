@@ -46,3 +46,4 @@ VanillaTilt.init(blocks, {
     reverse: true,
     max: 5
 })
+

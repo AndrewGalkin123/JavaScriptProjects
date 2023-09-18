@@ -355,6 +355,15 @@ main {
     transform-origin: right center;
 }
 
+
+.feedback-form { 
+    margin-top: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
 @media (min-width: 768px) {
     .post-item {
         flex-basis: 50%;
