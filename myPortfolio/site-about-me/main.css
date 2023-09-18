@@ -264,7 +264,7 @@ main {
   
     border-radius: 8px;
     transition: 0.2s all ease-in;
-    height: 460px;
+    height: 580px;
 }
 
 
@@ -293,18 +293,19 @@ main {
 
 .item-body {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .item-body h3 {
     font-weight: 500;
     margin-bottom: 15px;
     transition-delay: .05s;
+    color: rgb(0, 0, 0);
 }
 
 .item-body p {
     transition-delay: .1s;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .item-footer {
