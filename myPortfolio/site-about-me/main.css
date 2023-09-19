@@ -33,7 +33,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* Добавляем это свойство */
     width: 100%;
     margin-right: 40px;
 }
@@ -60,13 +59,13 @@ header {
 }
 
 main {
-    height: 4000px;
+    height: 3000px;
     background-color: black;
     background-image: url(./bg.jpg);
     background-size: 100% 1000px;
     background-repeat: no-repeat;
     position: relative;
-    top: 70px;
+  
 
 }
 
@@ -75,7 +74,7 @@ main {
     flex-direction: row;
     align-items: right;
     position: relative;
-    top: 100px;
+    top: 200px;
     justify-content: center;
 }
 
@@ -356,11 +355,33 @@ main {
 }
 
 
-.feedback-form { 
-    margin-top: 500px;
+footer { 
+    height: 70px;
+    background-color: #3b3941 ;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    
+}
+
+footer p { 
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-icons {
+    font-size: 30px; /* Размер иконок */
+}
+
+.social-icons a {
+    margin-left: 10px; /* Расстояние между иконками */
+    color: #ffffff; /* Цвет иконок */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0074cc; /* Цвет при наведении на иконки */
 }
 
 
@@ -376,3 +397,8 @@ main {
         flex-basis: 33.333333333%;
     }
 }
+
+@media screen and (max-width: 768px) {
+   
+}
+
