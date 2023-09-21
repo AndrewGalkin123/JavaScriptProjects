@@ -14,7 +14,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    
+
 }
 
 .title {
@@ -66,7 +66,8 @@ main {
     background-position: top;
     background-size: cover;
     position: relative;
-    padding-bottom: 200px; /* Додав padding-bottom для відступу внизу */
+    padding-bottom: 200px;
+    /* Додав padding-bottom для відступу внизу */
 }
 
 .about-me {
@@ -76,7 +77,7 @@ main {
     position: relative;
     top: 200px;
     justify-content: center;
-   
+
 }
 
 .main-associations {
@@ -214,7 +215,7 @@ main {
     transform-origin: center;
     z-index: 1;
     transform: rotateY(180deg) translateZ(-1px);
-    
+
 }
 
 .back-content {
@@ -238,24 +239,25 @@ main {
 
 
 
-.wrapper { 
+.wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    
+
+
 }
 
-.work-experience, .courses {
+.work-experience,
+.courses {
     margin-top: 300px;
     width: 45%;
-  
+
 }
 
 
 .post-item {
     cursor: pointer;
-  
+
     border-radius: 8px;
     transition: 0.2s all ease-in;
     height: 600px;
@@ -266,7 +268,7 @@ main {
 .post-item * {
     transition: .3s linear;
     text-decoration: none;
-    
+
 }
 
 .item-content {
@@ -355,31 +357,34 @@ footer {
     background-color: #3b3941;
     display: flex;
     align-items: center;
-  
-    
+
+
     width: 100%;
-    z-index: 5; 
+    z-index: 5;
 }
 
-footer p { 
+footer p {
     color: #ffffff;
     font-size: 25px;
     margin-left: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .social-icons {
-    font-size: 30px; /* Размер иконок */
+    font-size: 30px;
+    /* Размер иконок */
 }
 
 .social-icons a {
-    margin-left: 10px; /* Расстояние между иконками */
-    color: #ffffff; /* Цвет иконок */
+    margin-left: 10px;
+    color: #ffffff;
+    /* Цвет иконок */
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #0074cc; /* Цвет при наведении на иконки */
+    color: #0074cc;
+    /* Цвет при наведении на иконки */
 }
 
 
@@ -387,22 +392,24 @@ footer p {
 
 
 @media screen and (max-width: 768px) {
-   .about-me{ 
-    flex-direction: column
-   }
-  
-   .navigation ul li:first-child{ 
-    display: none
-   }
-   .navigation ul li:nth-child(4){ 
-    display: none
-   }
+    .about-me {
+        flex-direction: column
+    }
+
+    .navigation ul li:first-child {
+        display: none
+    }
+
+    .navigation ul li:nth-child(4) {
+        display: none
+    }
 }
+
 @media (max-width: 768px) {
     header {
-       
-       
-        width: 100%; 
+
+
+        width: 100%;
     }
 
     .title {
@@ -423,6 +430,14 @@ footer p {
         align-items: center;
         top: 100px;
     }
+
+    .panda {
+        height: 400px;
+        width: auto;
+
+    }
+
+
 
     .text-container {
         margin-left: 0;
@@ -447,11 +462,7 @@ footer p {
         margin-top: 10px;
     }
 
-    .about-me model-viewer {
-        height: 400px;
-        width: 400px;
-        margin: 20px 0;
-    }
+
 
     .text-container .info-about-me {
         font-size: 16px;
@@ -477,25 +488,27 @@ footer p {
     }
 
     .wrapper {
+      
         flex-direction: column;
+        width: 94%;
+        justify-content: center;
     }
 
-    .work-experience, .courses {
+    .work-experience,
+    .courses {
         width: 100%;
         margin-top: 100px;
+       
+        
     }
 
     .post-item {
         height: auto;
+      
     }
 
     .link {
         font-size: 14px;
     }
-    .wrapper { 
-        flex-direction: column;
-        width: 94%;
-    }
+
 }
-
-
