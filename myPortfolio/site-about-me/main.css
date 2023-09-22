@@ -391,8 +391,10 @@ footer p {
 
 
 
-@media screen and (max-width: 768px) {
-    .about-me {
+
+
+@media (max-width: 768px) {
+     .about-me {
         flex-direction: column
     }
 
@@ -403,9 +405,6 @@ footer p {
     .navigation ul li:nth-child(4) {
         display: none
     }
-}
-
-@media (max-width: 768px) {
     header {
 
 
@@ -501,7 +500,6 @@ footer p {
        
         
     }
-
     .post-item {
         height: auto;
       
