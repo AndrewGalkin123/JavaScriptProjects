@@ -44,6 +44,6 @@ const courses = document.querySelector(".courses")
 const blocks = [workExperience, courses]
 VanillaTilt.init(blocks, {
     reverse: true,
-    max: 5
+    max: 2
 })
 

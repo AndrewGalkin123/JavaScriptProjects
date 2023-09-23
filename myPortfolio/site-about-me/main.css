@@ -13,7 +13,7 @@ header {
     padding: 0 20px;
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
 
 }
 
@@ -63,11 +63,11 @@ header {
 main {
     background-color: black;
     background-image: url(./bg.jpg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     position: relative;
     padding-bottom: 200px;
-    /* Додав padding-bottom для відступу внизу */
+
 }
 
 .about-me {
@@ -394,7 +394,8 @@ footer p {
 
 
 @media (max-width: 1400px) {
-     .about-me {
+
+    .about-me {
         flex-direction: column
     }
 
@@ -405,11 +406,8 @@ footer p {
     .navigation ul li:nth-child(4) {
         display: none
     }
-    header {
 
-
-        width: 100%;
-    }
+  
 
     .title {
         font-size: 40px;
@@ -436,12 +434,24 @@ footer p {
 
     }
 
-
+    .job-title {
+        width: 100%;
+        font-size: 24px;
+        margin-top: 10px;
+    }
 
     .text-container {
         margin-left: 0;
         text-align: center;
         width: 94%;
+    }
+
+    .text-container .info-about-me {
+        border-radius: 8px;
+        background: rgb(66, 64, 64);
+        padding: 25px;
+        box-shadow: 0 0 10px #ffffff;
+        color: rgb(255, 255, 255);
     }
 
     .text-line {
@@ -456,21 +466,18 @@ footer p {
         font-size: 40px;
     }
 
-    .job-title {
-        font-size: 24px;
-        margin-top: 10px;
-    }
 
 
 
     .text-container .info-about-me {
-        font-size:  20px;
+        font-size: 20px;
         max-width: 100%;
         margin-top: 10px;
     }
 
     .skills {
         margin-top: 200px;
+        transition: opacity 1.7s ease-in-out, transform 1.7s ease-in-out;
     }
 
     .cards {
@@ -480,37 +487,40 @@ footer p {
         height: auto;
     }
 
-    .card  {
+    .card {
         margin-bottom: 10px;
     }
-    
+
 
     .front img {
         border-radius: 10px;
     }
 
     .wrapper {
-      
-      
+
+
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Center content vertically */
-        align-items: center; /* Center content horizontally */
-      
-        padding: 20px; 
-        
+        justify-content: center;
+        /* Center content vertically */
+        align-items: center;
+        /* Center content horizontally */
+
+        padding: 20px;
+
     }
 
     .work-experience,
     .courses {
         width: 98%;
         margin-top: 100px;
-      
+
 
     }
+
     .post-item {
         height: auto;
-    
+
     }
 
     .link {
