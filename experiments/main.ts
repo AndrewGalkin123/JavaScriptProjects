@@ -1,4 +1,4 @@
-let isCompleted: boolean = false;
+let isCompleted: Array<number> = [1,2,5,1];
 
-isCompleted = true;
+isCompleted = [1,2,7,1];
 console.log(isCompleted)
