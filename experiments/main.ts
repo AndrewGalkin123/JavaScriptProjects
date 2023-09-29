@@ -10,3 +10,10 @@ enum Directions {
     Left
 }
 
+const createPassword = (name: string, age?: number | string) => `${name}${age}`
+
+
+
+
+createPassword("Jack")
+createPassword("Jack", "31")
