@@ -83,3 +83,16 @@ namespace Utils {
     export const isEmpty = <T>(data: T): boolean => !data;
 }
 
+interface Flyable { 
+    readonly speed: number, // cant be changes
+    fly(): void;
+    [propName: string]: any // если хотим расширять obj 
+}
+
+const bird: Flyable = { 
+    speed: 200,
+    fly() { 
+        console.log(`${this.speed}`)
+    },
+    number: 1
+}
