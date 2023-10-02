@@ -125,3 +125,20 @@ const slav = new User1("Lala", 31)
 const yarik = new User1("123", 321)
 const yarik1 = new User1(213, 321)
 slav.getPass()
+
+
+
+const logClass = (constructor: Function) => {
+    console.log(constructor)
+}
+
+
+
+@logClass
+class User3 { 
+    constructor(public name: string, public age: number){}
+     
+    public getPass(): string { 
+        return `${this.name}${this.age}`
+    }
+}
