@@ -142,3 +142,15 @@ class User3 {
         return `${this.name}${this.age}`
     }
 }
+
+const user14: Readonly<any> = { // нельзя переопределить
+    name: "Andrew"
+}
+
+interface Props { 
+    a?: number;
+    b?: string
+}
+
+const obj: Required<Props> = {a: 5, b:"2"} // обязательно все значения
+
