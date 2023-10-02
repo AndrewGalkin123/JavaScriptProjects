@@ -1,4 +1,4 @@
-let isCompleted: Array<any> = [1, 2, 5, 1];
+let isCompleted: Array<number> = [1, 2, 5, 1];
 
 isCompleted = [1, 2, 7, 1];
 console.log(isCompleted)
@@ -96,3 +96,32 @@ const bird: Flyable = {
     },
     number: 1
 }
+
+//generic
+
+const getter1 = <T>(data: T): T => data; //es6
+
+function getter2<T>(data: T): T {  // es5
+    return data
+}
+
+getter1("test")
+
+getter1<number>(10)
+
+class User1<T, K extends number> { //generic class
+    constructor(public name:T, public age:K){}
+
+    public getPass(): string { 
+        return `${this.name}${this.age}`
+    }
+
+    public getSecret() :number { 
+        return this.age**2
+    }
+}
+
+const slav = new User1("Lala", 31)
+const yarik = new User1("123", 321)
+const yarik1 = new User1(213, 321)
+slav.getPass()
