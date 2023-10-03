@@ -154,3 +154,5 @@ interface Props {
 
 const obj: Required<Props> = {a: 5, b:"2"} // обязательно все значения
 
+
+// const obj1: Required<Props> = {a: 5} // ошибка
