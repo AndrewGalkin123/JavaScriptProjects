@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
-* { 
+
+* {
     margin: 0;
     padding: 0;
 }
 
-header { 
+header {
     width: 100%;
     height: 50px;
     background-color: black;
     display: flex;
     align-items: center;
-    
+
 }
 
 #title {
@@ -19,34 +20,36 @@ header {
     color: white;
 }
 
-#main-img { 
+#main-img {
     height: 40px;
     margin-left: 20px;
     margin-right: 10px;
 }
 
-main { 
+main {
     background-color: rgb(22, 22, 22);
-    height: 2000px;
+    height: 4000px;
     padding: 1%;
 }
 
-#navigation { 
+#navigation {
     color: white;
     font-family: 'Pathway Gothic One', sans-serif;
-    
+    margin-bottom: 25px;
 }
 
-#navigation ul { 
+#navigation ul {
     list-style: none;
 }
 
 #navigation ul li {
-    display: inline; /* Располагаем элементы списка в строчку */
+    display: inline;
+    /* Располагаем элементы списка в строчку */
     font-size: 22px;
-    margin-right: 10px; /* Добавляем небольшой отступ между элементами */
-    transition: all .3s ease; 
-  
+    margin-right: 10px;
+    /* Добавляем небольшой отступ между элементами */
+    transition: all .3s ease;
+
 }
 
 #navigation ul li:hover {
@@ -54,17 +57,60 @@ main {
     cursor: pointer;
 }
 
-#images {
-    margin-top: 20px;
+.images {
+   
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Три фотографии в строку */
-    grid-row-gap: 0; /* Удаление отступа между строками (по вертикали) */
-    grid-column-gap: 0; /* Удаление отступа между столбцами (по горизонтали) */
-  }
-  
-  #images img {
-    max-width: 100%;
-    height: auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    margin-bottom: -95px;
+}
+
+.images img {
     width: 100%;
-  }
-  
+    height: 100%;
+    border-radius: 5px;
+}
+
+.w1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.w2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.w3 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.w4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.w5 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.w6 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
