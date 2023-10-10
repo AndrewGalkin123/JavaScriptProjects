@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    
+}
+
+#title {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#main-img { 
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+main { 
+    background-color: rgb(22, 22, 22);
+    height: 2000px;
+    padding: 1%;
+}
+
+#navigation { 
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    
+}
+
+#navigation ul { 
+    list-style: none;
+}
+
+#navigation ul li {
+    display: inline; /* Располагаем элементы списка в строчку */
+    font-size: 22px;
+    margin-right: 10px; /* Добавляем небольшой отступ между элементами */
+    transition: all .3s ease; 
+  
+}
+
+#navigation ul li:hover {
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+#images {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три фотографии в строку */
+    grid-row-gap: 0; /* Удаление отступа между строками (по вертикали) */
+    grid-column-gap: 0; /* Удаление отступа между столбцами (по горизонтали) */
+  }
+  
+  #images img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  
