@@ -194,7 +194,7 @@ footer {
     background-color: black;
     align-items: center;
     color: white;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     padding-left: 2%;
 }
@@ -206,3 +206,41 @@ footer a {
 footer a:hover{
    color: rgb(53, 171, 136);
 }
+
+section { 
+    margin-top: 50px;
+}
+
+.architecture-title {
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    
+}
+
+
+
+
+.image-and-description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.image-and-description img { 
+    width: 50%;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+
+.image-and-description p { 
+    font-size: 24px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+    width: 40%;
+}
+
+
