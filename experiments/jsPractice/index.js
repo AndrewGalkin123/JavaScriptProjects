@@ -191,3 +191,19 @@ const aclean = (arr) => {
 
 console.log(aclean(arr23))
 
+console.log("////////////////////////////////////////////////")
+
+let students = ['Jack', 'James', 'Robert', 'John'];
+console.log(students);
+students.splice(2,1, "Kakar");
+console.log(students);
+console.log(students.slice(1,3))
+
+
+let str = "lorem ipsum is simply dummy text of the printing and typesetting industry"
+let newStr = str.replace("is", "are")
+console.log(newStr);
+
+let splitStr = "JavaScript, is, nice"
+let splitNewStr = splitStr.split(",")
+console.log(splitNewStr[0]);
