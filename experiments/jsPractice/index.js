@@ -195,9 +195,9 @@ console.log("////////////////////////////////////////////////")
 
 let students = ['Jack', 'James', 'Robert', 'John'];
 console.log(students);
-students.splice(2,1, "Kakar");
+students.splice(2, 1, "Kakar");
 console.log(students);
-console.log(students.slice(1,3))
+console.log(students.slice(1, 3))
 
 
 let str = "lorem ipsum is simply dummy text of the printing and typesetting industry"
@@ -207,3 +207,35 @@ console.log(newStr);
 let splitStr = "JavaScript, is, nice"
 let splitNewStr = splitStr.split(",")
 console.log(splitNewStr[0]);
+
+
+
+//Этот метод используется для добавления символов в начале строки, 
+//чтобы результирующая строка достигла указанной длины. По умолчанию в начале строки добавляются пробелы, 
+//но может добавляться и другая строка, указанная во втором аргументе.
+
+let numberPadStart = "15"
+let newNumberPadStart = numberPadStart.padStart(4, "3")
+console.log(newNumberPadStart);
+
+//padEnd аналогичен padStart, только добавляет символы в конце строки.
+
+let numberPadEnd = "15"
+let newNumberPadEnd = numberPadEnd.padEnd(4, "3")
+console.log(newNumberPadEnd);
+
+//keys()
+//Этот метод возвращает ключи объекта.
+const object1 = {
+    name: 'John',
+    age: 20,
+};
+console.log(Object.keys(object1));
+
+//Метод values() возвращает значения объекта.
+
+const object2 = {
+    name: 'John',
+    age: 20,
+  };
+  console.log(Object.values(object1));
