@@ -237,5 +237,18 @@ console.log(Object.keys(object1));
 const object2 = {
     name: 'John',
     age: 20,
-  };
-  console.log(Object.values(object1));
+};
+console.log(Object.values(object1));
+
+//assign()
+//Этот метод используется для копирования свойств объекта в другой объект.
+
+const person = {
+    name: "John",
+    age: 20
+};
+const obj2 = {
+    ishuman: true
+}
+Object.assign(person, obj);
+console.log(person);
