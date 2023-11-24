@@ -11,6 +11,11 @@ function App() {
   const [color, setColor] = useState("white")
   const [text, setText] = useState(1)
   
+  const handleColorChange = (newColor) => {
+    const hexColor = newColor.toHexString();
+    setColor(hexColor);
+  };
+  
   return (
     <>
       <Header title="AntDesign Demo"></Header>
@@ -21,9 +26,8 @@ function App() {
           <_Table rows={rows}></_Table>
         </Col>
       </Row>
-
-      <ColorPicker onChange={setColor}></ColorPicker>
       <Slider min={1} max={20} defaultValue={rows} onChange={setText}></Slider>
+      <ColorPicker onChange={handleColorChange}></ColorPicker>
       <DynamicButton text={text} color={color}></DynamicButton>
     </>
   );
