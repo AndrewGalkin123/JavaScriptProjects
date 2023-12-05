@@ -25,6 +25,7 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'no-var': 'warn',
     'react/react-in-jsx-scope': 'off',
     'prettier/prettier': [
       'warn',
