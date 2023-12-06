@@ -252,3 +252,4 @@ const obj2 = {
 }
 Object.assign(person, obj);
 console.log(person);
+
