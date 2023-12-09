@@ -4,7 +4,7 @@ const List = ({items = []}) => {
     if(!items.length) return null
 
     return(
-        <ul>
+        <ul className="list">
             {
                 items.map(item => <li key={item}>{item}</li>)
             }

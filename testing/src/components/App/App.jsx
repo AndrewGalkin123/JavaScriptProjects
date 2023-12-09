@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import List from '../List';
 import './App.css';
+import { useState, useEffect } from "react"
+
+const data = [ 
+  'HTML',
+  'CSS',
+  'JAVASCRIPT',
+  'TYPESCRIPT',
+  'REACT',
+  'VUE',
+  'ANGULAR',
+  'NodeJS'
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        <List items={data}/>
+      </div>
     </div>
   );
 }
