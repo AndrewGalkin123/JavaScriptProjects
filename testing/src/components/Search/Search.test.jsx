@@ -41,4 +41,23 @@ describe('Search component', () => {
 
         expect(onChange).toHaveBeenCalledTimes(5)
     })
+
+    it('dinamyc styles work', () => {
+        render(<Search value='abc' onChange={onChange} />)
+
+        expect(screen.getByRole('textbox')).toHaveClass('input')
+        expect(screen.getByRole('textbox')).toHaveClass('filled')
+        expect(screen.getByText('Search')).toHaveClass('label')
+     
+    })
+
+    it('Search snapshot',() => {
+        // eslint-disable-next-line testing-library/render-result-naming-convention
+        const search = render(
+            <Search value="" onChange={onChange}>
+                Find:
+            </Search>
+        )
+        expect(search).toMatchSnapshot()
+    })
 })
