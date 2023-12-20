@@ -3,15 +3,21 @@ import { ITodo } from "../types/data";
 
 const App: React.FC = () => {
   const [value, setValue] = useState("");
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<ITodo[]>([]);
 
   const addTodo = () => {
-    setTodos([...todos, { 
-        id: Date.now(),
-        title: value;
-        complete: false;
-    }])
-  }
+    if (value) {
+      setTodos([
+        ...todos,
+        {
+          id: Date.now(),
+          title: value,
+          complete: false,
+        },
+      ]);
+      setValue("");
+    }
+  };
 
   return (
     <div>
