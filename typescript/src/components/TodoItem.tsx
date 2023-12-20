@@ -1,13 +1,13 @@
-import { ITodo } from "../types/data"
+import { ITodo } from "../types/data";
 
 interface ITodoItem extends ITodo {}
 
-const TodoItem: React.FC = () => {
-    return(
-        <div>
+const TodoItem: React.FC<ITodoItem> = ({ id, title, complete }) => {
+  return <div>
+    <input type="checkbox" checked={complete}/>
+    {title}
+    <button>x</button>
+  </div>;
+};
 
-        </div>
-    )
-}
-
-export {TodoItem}
+export { TodoItem };

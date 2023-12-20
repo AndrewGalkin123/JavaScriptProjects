@@ -2,11 +2,17 @@ import { TodoItem } from "./TodoItem";
 import { ITodo } from "../types/data";
 
 interface ITodoListProps {
-    items: ITodo[]
+  items: ITodo[];
 }
 
-const TodoList: React.FC = (props) => {
-  return <div></div>;
+const TodoList: React.FC<ITodoListProps> = (props) => {
+  return (
+    <div>
+      {props.items.map(todo => (
+        <TodoItem key={todo.id} {...todo}/>
+      ))}
+    </div>
+  );
 };
 
 export { TodoList };
