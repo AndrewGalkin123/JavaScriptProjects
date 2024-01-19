@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex">
+      <input style="width: 240px" id="input" />
+      <button
+        onclick="handleSubmit()"
+        style="width: 240px; height: 80px"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        id="copyButton"
+        onclick="copyToClipboard()"
+        style="width: 240px; height: 80px"
+        type="submit"
+      >
+        Copy
+      </button>
+      <button
+        onclick="clearInput()"
+        type="submit"
+        style="width: 200px; height: 80px"
+      >
+        DEL
+      </button>
+    </div>
+    <script>
+      let result = "";
+      function handleSubmit() {
+        var inputValue = document
+          .getElementById("input")
+          .value.replaceAll(" ", "");
+
+        // Разбить строку на отдельные элементы
+        var dataArray = inputValue.split('","');
+        dataArray = dataArray.map(function (item) {
+          return item.replace('"', "");
+        });
+        dataArray.forEach((el) => {
+          result += el + "\n";
+        });
+
+        console.log(result);
+      }
+
+      function copyToClipboard() {
+        let tempTextArea = document.createElement("textarea");
+        tempTextArea.value = result;
+
+        document.body.appendChild(tempTextArea);
+
+        tempTextArea.select();
+        tempTextArea.setSelectionRange(0, 99999); // для поддержки мобильных устройств
+
+        document.execCommand("copy");
+        document.body.removeChild(tempTextArea);
+      }
+      function clearInput() {
+        document.getElementById("input").value = "";
+      }
+    </script>
+  </body>
+</html>
