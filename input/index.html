@@ -6,29 +6,14 @@
     <title>Document</title>
   </head>
   <body>
-    <div style="display: flex">
-      <input style="width: 240px" id="input" />
+    <div style="display: flex; align-items: center;">
+      <input style="width: 240px; height: 70px;" id="input" />
       <button
         onclick="handleSubmit()"
-        style="width: 240px; height: 80px"
+        style="width: 600px; height: 100px"
         type="submit"
       >
         Submit
-      </button>
-      <button
-        id="copyButton"
-        onclick="copyToClipboard()"
-        style="width: 240px; height: 80px"
-        type="submit"
-      >
-        Copy
-      </button>
-      <button
-        onclick="clearInput()"
-        type="submit"
-        style="width: 200px; height: 80px"
-      >
-        DEL
       </button>
     </div>
     <script>
@@ -48,10 +33,7 @@
         });
 
         console.log(result);
-      }
-
-      function copyToClipboard() {
-        let tempTextArea = document.createElement("textarea");
+          let tempTextArea = document.createElement("textarea");
         tempTextArea.value = result;
 
         document.body.appendChild(tempTextArea);
@@ -61,11 +43,12 @@
 
         document.execCommand("copy");
         document.body.removeChild(tempTextArea);
-      }
-      function clearInput() {
-        document.getElementById("input").value = "";
+          document.getElementById("input").value = "";
         result = ""
       }
+
+     
+     
     </script>
   </body>
 </html>
