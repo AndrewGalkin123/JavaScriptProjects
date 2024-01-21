@@ -21,10 +21,11 @@
       function handleSubmit() {
         var inputValue = document
           .getElementById("input")
-          .value.replaceAll(" ", "");
+          .value.replace(/[^a-zA-Zа-яА-Я,]/g, '');;
+        console.log(inputValue)
 
         // Разбить строку на отдельные элементы
-        var dataArray = inputValue.split('","');
+        var dataArray = inputValue.split(',');
         dataArray = dataArray.map(function (item) {
           return item.replace('"', "");
         });
