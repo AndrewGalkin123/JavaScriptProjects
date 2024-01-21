@@ -22,7 +22,6 @@
         var inputValue = document
           .getElementById("input")
           .value.replace(/[^a-zA-Zа-яА-Я,]/g, '');;
-        console.log(inputValue)
 
         // Разбить строку на отдельные элементы
         var dataArray = inputValue.split(',');
@@ -33,8 +32,7 @@
           result += el + "\n";
         });
 
-        console.log(result);
-          let tempTextArea = document.createElement("textarea");
+        let tempTextArea = document.createElement("textarea");
         tempTextArea.value = result;
 
         document.body.appendChild(tempTextArea);
