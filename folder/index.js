@@ -1,28 +1,14 @@
 
 
-let name = "Andrew"
 
-let x = 5;
-let y = 10;
-
-let sum = x + y;
-console.log(sum)
-
-let age = 16
-
-if(age >= 18){
-    console.log('You are 18')
-}else {
-    console.log('You are not 18')
+if(true){
+    var y = 20;
+    console.log(x)
+    console.log(y)
+    x = 30
+    y = 40
 }
-
-for(let i = 0; i <= 5; i++){
-    console.log(i)
-}
-
-function greetings(name){
-    console.log("Привет " + name)
-}
-
-greetings("John")
-
+console.log(x)
+console.log(y)
+var x = 10;
+var x = 10;
